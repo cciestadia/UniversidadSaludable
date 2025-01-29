@@ -20,7 +20,7 @@ h6 {
 a {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color: #fbaf32;
+    color: #336699;
     transition: .3s;
 }
 
@@ -38,14 +38,14 @@ a:focus {
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
-    background: #fbaf32;
-    border: 2px solid #fbaf32;
-    border-radius: 5px;
+    background: #6699CC;
+    border: 2px solid #6699CC;
+    border-radius: 25px;
     transition: .5s;
 }
 
 .btn.custom-btn:hover {
-    color: #fbaf32;
+    color: #003366;
     background: transparent;
 }
 
@@ -62,7 +62,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #fbaf32;
+    background: #003366;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -70,7 +70,7 @@ a:focus {
     font-size: 22px;
     right: 15px;
     bottom: 15px;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background 0.5s;
     z-index: 9;
 }
@@ -81,7 +81,7 @@ a:focus {
 }
 
 .back-to-top:hover {
-    background: #719a0a;
+    background: #6699CC;
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
@@ -109,7 +109,7 @@ a:focus {
 
 .navbar .navbar-brand {
     margin: 0;
-    color: #fbaf32;
+    color: #003366;
     font-size: 45px;
     line-height: 0px;
     font-weight: 700;
@@ -119,15 +119,15 @@ a:focus {
 }
 
 .navbar .navbar-brand span {
-    color: #719a0a;
+    color: #6699CC;
 }
 
 .navbar .navbar-brand:hover {
-    color: #fbaf32;
+    color: #003366;
 }
 
 .navbar .navbar-brand:hover span {
-    color: #fbaf32;
+    color: #003366;
 }
 
 .navbar .navbar-brand img {
@@ -157,11 +157,11 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #fbaf32;
+        color: #B3D9F7;
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #fbaf32;
+        color: #003366;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -180,12 +180,12 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #fbaf32;
+        color: #a8d9ff;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #fbaf32;
+        color: #3080d1;
     }
 }
 
@@ -196,7 +196,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #fbaf32;
+        color: #003366;
     }
     
     .navbar .navbar-nav {
@@ -283,7 +283,7 @@ a:focus {
 }
 
 .carousel .carousel-text h1 span {
-    color: #fbaf32;
+    color: #89c2fb;
 }
 
 .carousel .carousel-text p {
@@ -378,7 +378,7 @@ a:focus {
 
 .page-header h2 {
     position: relative;
-    color: #fbaf32;
+    color: #336699;
     font-size: 60px;
     font-weight: 700;
 }
@@ -403,7 +403,7 @@ a:focus {
     top: -1px;
     right: -7px;
     text-align: center;
-    color: #fbaf32;
+    color: #336699;
 }
 
 .page-header a:last-child::after {
@@ -430,7 +430,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #719a0a;
+    color: #336699;
     margin-bottom: 5px;
     position: relative;
     font-size: 20px;
@@ -654,15 +654,15 @@ a:focus {
 
 .about .about-img img {
     position: relative;
-    width: 100%;
-    border-radius: 15px;
+    width: 80%;
+    border-radius: 100px;
 }
 
 .about .btn-play {
     position: absolute;
     z-index: 1;
     top: 50%;
-    left: 50%;
+    left: 41.5%;
     transform: translateX(-50%) translateY(-50%);
     box-sizing: content-box;
     display: block;
@@ -684,7 +684,7 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fbaf32;
+    background:  #336699;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -699,7 +699,7 @@ a:focus {
     display: block;
     width: 100px;
     height: 100px;
-    background: #fbaf32;
+    background: #336699;
     border-radius: 50%;
     transition: all 200ms;
 }
@@ -1131,7 +1131,7 @@ a:focus {
     justify-content: center;
     flex-direction: column;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 50px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .08);
     transition: .3s;
     overflow: hidden;
@@ -1184,11 +1184,11 @@ a:focus {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #fbaf32;
+    background: #B3D9F7;
 }
 
 .testimonial .owl-dot.active {
-    background: #719a0a;
+    background: #336699;
 }
 
 
@@ -1741,6 +1741,7 @@ a:focus {
     margin: 0 0 30px 0;
     padding: 30px 15px 0 15px;
     background: rgba(0, 0, 0, .04);
+    border-radius: 50px;
 }
 
 .contact .contact-info {
@@ -1757,7 +1758,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fbaf32;
+    background: #003366;
     border-radius: 50px;
 }
 
@@ -1777,7 +1778,7 @@ a:focus {
 .contact .contact-text h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #719a0a;
+    color: #336699;
 }
 
 .contact .contact-text p {
@@ -1789,7 +1790,7 @@ a:focus {
 .contact .contact-social a {
     margin-right: 10px;
     font-size: 18px;
-    color: #fbaf32;
+    color: #003366;
 }
 
 .contact .contact-social a:hover {
@@ -1806,7 +1807,7 @@ a:focus {
 .contact .contact-form input {
     padding: 15px;
     background: none;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -1814,7 +1815,7 @@ a:focus {
     height: 150px;
     padding: 8px 15px;
     background: none;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
