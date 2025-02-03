@@ -27,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #719a0a;
+    color: #0a529a;
     outline: none;
     text-decoration: none;
 }
@@ -110,7 +110,7 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #003366;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 0px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
@@ -157,18 +157,18 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #B3D9F7;
+        color: #75c1fc;
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #003366;
+        color: #406385;
     }
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
         font-family: 'Nunito', sans-serif;
-        color: #ffffff;
+        color: #797979;
         font-size: 18px;
         font-weight: 600;
     }
@@ -180,7 +180,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #a8d9ff;
+        color: #1281d5;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -362,6 +362,62 @@ a:focus {
 }
 
 
+
+.team-text {
+    display: flex;
+    flex-direction: column; /* Mantiene "Nombre" en su posición */
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Separa el texto y el botón */
+    align-items: left; /*Alinea verticalmente el texto y el botón */
+    width: 100%;
+}
+
+.custom-btn {
+    background-color: #003366; /* Color azul oscuro */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #0055a5; /* Color más claro al pasar el mouse */
+}
+
+
+
+
+
+/*******************************/
+/******* Estilos para modal de investigadores *******/
+/*******************************/
+
+.modal-content {
+    border-radius: 25px !important; /* Aplica bordes redondeados */
+    overflow: hidden; /* Evita que el contenido sobresalga de los bordes */
+}
+
+.modal-dialog {
+    border-radius: 25px; /* Asegura que el borde redondeado se aplique correctamente */
+}
+
+.modal {
+    backdrop-filter: blur(5px); /* Aplica un desenfoque en el fondo del modal */
+}
+
+.modal-footer .btn {
+    border-radius: 25px; /* Redondea los botones del modal */
+}
+
+
+
+
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
@@ -378,7 +434,7 @@ a:focus {
 
 .page-header h2 {
     position: relative;
-    color: #336699;
+    color: #90b8e0;
     font-size: 60px;
     font-weight: 700;
 }
@@ -386,10 +442,12 @@ a:focus {
 .page-header a {
     position: relative;
     padding: 0 12px;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 20px; 
     color: #ffffff;
+    background: none; /* Elimina fondos heredados */
+    z-index: 2; /* Asegura que el texto no quede detrás de la imagen */
 }
+
 
 .page-header a:hover {
     color: #ffffff;
@@ -421,12 +479,16 @@ a:focus {
 }
 
 
+
+
+
 /*******************************/
 /******* Section Header ********/
 /*******************************/
 .section-header {
     position: relative;
     margin-bottom: 45px;
+    text-align: center;
 }
 
 .section-header p {
@@ -863,6 +925,49 @@ a:focus {
 }
 
 
+
+/* Asegura que los botones se vean unidos */
+.nav-pills .nav-link {
+    border-radius: 0 !important; /* Borde cuadrado por defecto */
+    border: 1px solid #ccc !important; /* Borde interno para separar los botones */
+    margin: 0 !important; /* Elimina el espacio entre botones */
+    padding: 10px 20px !important; /* Ajusta el tamaño y espaciado del botón */
+}
+
+/* Redondear los bordes izquierdo y derecho solo en el primer y último botón */
+.nav-pills .nav-item:first-child .nav-link {
+    border-radius: 25px 0 0 25px !important; /* Redondeado solo en el primer botón */
+}
+
+.nav-pills .nav-item:last-child .nav-link {
+    border-radius: 0 25px 25px 0 !important; /* Redondeado solo en el último botón */
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 576px) {
+    .nav-pills .nav-link {
+        padding: 8px 15px !important; /* Ajusta el espaciado en pantallas pequeñas */
+        font-size: 14px !important; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-pills .nav-link {
+        padding: 8px 15px !important; /* Ajusta el espaciado en pantallas pequeñas */
+        font-size: 14px !important; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-pills .nav-link {
+        padding: 8px 15px !important; /* Ajusta el espaciado en pantallas pequeñas */
+        font-size: 14px !important; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+
+
+
 /*******************************/
 /*********** Menu CSS **********/
 /*******************************/
@@ -881,8 +986,8 @@ a:focus {
 }
 
 .menu .menu-tab .nav.nav-pills .nav-link {
-    color: #ffffff;
-    background: #fbaf32;
+    color: #2c6eb5;
+    background: #f1f1f1;
     border-radius: 5px;
     margin: 0 5px;
 }
@@ -890,7 +995,7 @@ a:focus {
 .menu .menu-tab .nav.nav-pills .nav-link:hover,
 .menu .menu-tab .nav.nav-pills .nav-link.active {
     color: #ffffff;
-    background: #719a0a;
+    background: #438bd4;
 }
 
 .menu .menu-tab .tab-content {
@@ -1006,7 +1111,7 @@ a:focus {
 
 .team .team-img {
     position: relative;
-    border-radius: 15px 15px 0 0;
+    border-radius: 30px 30px 0 0;
     overflow: hidden;
 }
 
@@ -1047,13 +1152,13 @@ a:focus {
     border-radius: 40px;
     font-size: 16px;
     color: #ffffff;
-    background: #fbaf32;
+    background: #6699CC;
     opacity: 0;
 }
 
 .team .team-social a:hover {
     color: #ffffff;
-    background: #719a0a;
+    background: #003f97;
 }
 
 .team .team-item:hover .team-social {
@@ -1086,12 +1191,12 @@ a:focus {
 
 .team .team-text {
     position: relative;
-    padding: 25px 15px;
-    text-align: center;
-    background: #ffffff;
+    padding: 20px 20px;
+    text-align: left;
+    background: #ececec;
     border: 1px solid rgba(0, 0, 0, .07);
     border-top: none;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 30px 30px;
 }
 
 .team .team-text h2 {
@@ -1199,22 +1304,26 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 0 0;
+    
 }
 
 .blog .blog-item {
     position: relative;
+    
 }
 
 .blog .blog-img {
     position: relative;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     z-index: 1;
+    
 }
 
 .blog .blog-img img {
     width: 100%;
+    
 }
 
 .blog .blog-content {
@@ -1224,14 +1333,15 @@ a:focus {
     left: 30px;
     padding: 25px 30px 30px 30px;
     background: #ffffff;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
-    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.143);
+    border-radius: 25px;
     z-index: 2;
 }
 
 .blog .blog-content h2.blog-title {
     font-size: 22px;
     font-weight: 700;
+    
 }
 
 .blog .blog-meta {
@@ -1245,45 +1355,55 @@ a:focus {
     margin: 0 10px 0 0;
     font-size: 14px;
     color: #999999;
+    
 }
 
 .blog .blog-meta i {
-    color: #fbaf32;
+    color: #3243fb;
     margin-right: 5px;
+    
 }
 
 .blog .blog-meta p:last-child {
     margin: 0;
+    
 }
 
 .blog .blog-text {
     position: relative;
+    
 }
 
 .blog .blog-text p {
     margin-bottom: 10px;
+    
 }
 
 .blog .blog-item a.btn {
     margin-top: 10px;
     padding: 5px 15px;
+    
+    
 }
 
 .blog .pagination .page-link {
-    color: #fbaf32;
+    color: #6699CC;
     border-radius: 5px;
-    border-color: #fbaf32;
+    border-color: #6699CC;
     margin: 0 2px;
+    
 }
 
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
     color: #ffffff;
-    background: #fbaf32;
+    background: #0a529a;
+    
 }
 
 .blog .pagination .disabled .page-link {
     color: #999999;
+    
 }
 
 @media(max-width: 575.98px){
