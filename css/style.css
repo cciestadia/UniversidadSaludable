@@ -310,7 +310,7 @@ a:focus {
 
 .carousel .carousel-text p {
     color: #ffffff;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     margin-bottom: 35px;
 }
