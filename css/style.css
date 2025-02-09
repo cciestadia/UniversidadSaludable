@@ -275,7 +275,8 @@ a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+     
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgb(255, 255, 255));
     z-index: 1;
 }
 
@@ -305,7 +306,7 @@ a:focus {
 }
 
 .carousel .carousel-text h1 span {
-    color: #89c2fb;
+    color: #003366;
 }
 
 .carousel .carousel-text p {
@@ -448,15 +449,16 @@ a:focus {
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgb(255, 255, 255)), url(../img/page-header.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .page-header h2 {
     position: relative;
-    color: #90b8e0;
+    color: #003366;
     font-size: 60px;
     font-weight: 700;
 }
@@ -465,7 +467,7 @@ a:focus {
     position: relative;
     padding: 0 12px;
     font-size: 20px; 
-    color: #ffffff;
+    color: #2f76d3;
     background: none; /* Elimina fondos heredados */
     z-index: 2; /* Asegura que el texto no quede detrás de la imagen */
 }
