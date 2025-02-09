@@ -91,6 +91,81 @@ a:focus {
 }
 
 
+
+
+
+ /**********************************/
+/*********** Modal acervo **********/
+/**********************************/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Ajuste para que la imagen ocupe la mitad izquierda de la tarjeta */
+.card-image {
+
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Ajuste para que el contenido esté en el lado derecho */
+.card-content {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Estilos para el modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
@@ -449,7 +524,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgb(255, 255, 255)), url(../img/page-header.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgb(255, 255, 255)), url(../img/blog-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
