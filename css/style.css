@@ -99,7 +99,6 @@ a:focus {
 /**********************************/
 
 .container {
-    display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
@@ -108,8 +107,8 @@ a:focus {
 
 .card {
     background-color: rgb(255, 255, 255);
-    width: 300px;
-    height: 350px;
+    /* width: 300px;
+    height: 350px; */
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
     padding: 20px;
@@ -119,6 +118,22 @@ a:focus {
     transition: transform 0.3s;
     cursor: pointer;
 }
+
+.card-informe {
+    background-color: rgb(255, 255, 255);
+    height: 110px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
 
 .card:hover {
     transform: translateY(-10px);
@@ -151,6 +166,7 @@ a:focus {
     font-size: 1.1rem;
 }
 
+    
 .card p {
     color: #767676;
     font-size: 0.7rem;
@@ -164,7 +180,6 @@ a:focus {
     margin: 1px 0; /* Reduce el margen superior e inferior */
     line-height: 3; /* Reduce el espacio entre líneas */
 }
-
 
 
 /* Estilos para el modal */
