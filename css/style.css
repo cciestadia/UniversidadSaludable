@@ -91,6 +91,93 @@ a:focus {
 }
 
 
+
+
+
+ /**********************************/
+/*********** Modal acervo **********/
+/**********************************/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Ajuste para que la imagen ocupe la mitad izquierda de la tarjeta */
+.card-image {
+
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Ajuste para que el contenido esté en el lado derecho */
+.card-content {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.card h3 {
+    color: #1661bd;
+    margin-top: 1px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: #767676;
+    font-size: 0.7rem;
+    margin: 1px 0; /* Reduce el margen superior e inferior */
+    line-height: 1.2; /* Reduce el espacio entre líneas */
+}
+
+.card a {
+    color: #000000;
+    font-size: 0.9rem;
+    margin: 1px 0; /* Reduce el margen superior e inferior */
+    line-height: 3; /* Reduce el espacio entre líneas */
+}
+
+
+
+/* Estilos para el modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
@@ -119,7 +206,7 @@ a:focus {
 }
 
 .navbar .navbar-brand span {
-    color: #639ed8;
+    color: #1465b6;
 }
 
 .navbar .navbar-brand:hover {
@@ -157,7 +244,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #75c1fc;
+        color: #043052;
     }
     
     .navbar.nav-sticky .navbar-brand {
@@ -168,7 +255,7 @@ a:focus {
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
         font-family: 'Nunito', sans-serif;
-        color: #75c1fc;
+        color: #002c66;
         font-size: 18px;
         font-weight: 600;
     }
@@ -180,7 +267,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #c9e8ff;
+        color: #ffffff;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -275,7 +362,8 @@ a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+     
+    background: linear-gradient(rgba(40, 130, 255, 0.687), rgb(255, 255, 255));
     z-index: 1;
 }
 
@@ -305,7 +393,7 @@ a:focus {
 }
 
 .carousel .carousel-text h1 span {
-    color: #89c2fb;
+    color: #003366;
 }
 
 .carousel .carousel-text p {
@@ -448,15 +536,16 @@ a:focus {
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/page-header.jpg);
+    background: linear-gradient(rgba(40, 130, 255, 0.687), rgb(255, 255, 255)), url(../img/carousel-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .page-header h2 {
     position: relative;
-    color: #90b8e0;
+    color: #003366;
     font-size: 60px;
     font-weight: 700;
 }
@@ -465,7 +554,7 @@ a:focus {
     position: relative;
     padding: 0 12px;
     font-size: 20px; 
-    color: #ffffff;
+    color: #2f76d3;
     background: none; /* Elimina fondos heredados */
     z-index: 2; /* Asegura que el texto no quede detrás de la imagen */
 }
