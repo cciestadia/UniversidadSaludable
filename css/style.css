@@ -107,11 +107,11 @@ a:focus {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 300px;
     height: 350px;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -146,14 +146,26 @@ a:focus {
 }
 
 .card h3 {
-    margin-top: 20px;
-    font-size: 1.2rem;
+    color: #1661bd;
+    margin-top: 1px;
+    font-size: 1.1rem;
 }
 
 .card p {
-    color: #555;
-    font-size: 0.9rem;
+    color: #767676;
+    font-size: 0.7rem;
+    margin: 1px 0; /* Reduce el margen superior e inferior */
+    line-height: 1.2; /* Reduce el espacio entre líneas */
 }
+
+.card a {
+    color: #000000;
+    font-size: 0.9rem;
+    margin: 1px 0; /* Reduce el margen superior e inferior */
+    line-height: 3; /* Reduce el espacio entre líneas */
+}
+
+
 
 /* Estilos para el modal */
 .modal-content {
@@ -194,7 +206,7 @@ a:focus {
 }
 
 .navbar .navbar-brand span {
-    color: #639ed8;
+    color: #1465b6;
 }
 
 .navbar .navbar-brand:hover {
@@ -232,7 +244,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #75c1fc;
+        color: #043052;
     }
     
     .navbar.nav-sticky .navbar-brand {
@@ -243,7 +255,7 @@ a:focus {
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
         font-family: 'Nunito', sans-serif;
-        color: #75c1fc;
+        color: #002c66;
         font-size: 18px;
         font-weight: 600;
     }
@@ -255,7 +267,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #c9e8ff;
+        color: #ffffff;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -351,7 +363,7 @@ a:focus {
     bottom: 0;
     left: 0;
      
-    background: linear-gradient(rgba(0, 0, 0, 0.498), rgb(255, 255, 255));
+    background: linear-gradient(rgba(40, 130, 255, 0.687), rgb(255, 255, 255));
     z-index: 1;
 }
 
@@ -524,7 +536,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgb(255, 255, 255)), url(../img/blog-1.jpg);
+    background: linear-gradient(rgba(40, 130, 255, 0.687), rgb(255, 255, 255)), url(../img/carousel-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

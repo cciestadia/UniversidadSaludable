@@ -91,7 +91,7 @@
 
                 <div class="tab-content">
 
-<br>
+                     <br>
  
                     <!-- informes -->
                     <div id="informes" class="container tab-pane active">
@@ -105,80 +105,64 @@
                         
                         <!-- Aquí va el contenido de la página -->
                         <div class="container">
-                            <!-- Tarjetas -->
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 1" class="card-image">
-                                <div class="card-content">
-                                    
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
+                            <div class="row">
+                                <!-- Tarjeta 1 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
+                                        <img src="img/blog-1.jpg" alt="Imagen Informe 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del informe </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
+                                            <a>Detalles del informe.</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 2', 'Detalles más detallados sobre el Informe 2.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 2" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
+                                
+                                <!-- Tarjeta 2 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
+                                        <img src="img/blog-1.jpg" alt="Imagen Informe 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del informe </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
+                                            <a>Detalles del informe.</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
+                                <!-- Tarjeta 3 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
+                                        <img src="img/blog-1.jpg" alt="Imagen Informe 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del informe </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
+                                            <a>Detalles del informe.</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModal" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-1.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del informe</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del informe.</p>
-                                    <p>Detalles del informe.</p>
-                                </div>
-                            </div>
-                        
-                            
-                            <!-- Agrega más tarjetas aquí de la misma forma -->
                         </div>
+                        
                         
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="myModalLabel">Detalles del Informe</h5>
+                                        <h3 class="modal-title" id="myModalLabel">Título del Informe</h3>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
-                                        <h3 id="modal-title">Título del Informe</h3>
+                                    <div class="modal-body"> 
                                         <p id="modal-description">Descripción detallada del informe seleccionado.</p>
+                                        <p><i class="far fa-user"></i> Autor:</p>
+                                        <p><i class="far fa-calendar-alt"></i> Fecha de publicación.</p> 
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -221,176 +205,69 @@
                      
                             <h2>Artículos</h2>
                         </div>
-                        <div class="container">
-                            <!-- Tarjetas -->
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 1" class="card-image">
-                                <div class="card-content">
-                                    
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                            
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 2', 'Detalles más detallados sobre el Informe 2.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 2" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-2.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del artículo</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
-                                    <p>Detalles del artículo.</p>
-                                </div>
-                            </div>
-                        
-
-
-                            
-
-                            <!-- Menu Start -->
-        <div class="menu">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Artículos antiguos</p>
-          
-                </div>
-                <div class="menu-tab">
                     
-                    <div class="tab-content">
-                        <div id="burgers" class="container tab-pane active">
+                        
+                        <!-- Aquí va el contenido de la página -->
+                        <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/blog-3.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Título del artículo</span> <strong>ver más</strong></h3>
-                                            <p>Descripción del artículo donde se indique de manera general de que trata.</p>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/blog-3.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Título del artículo</span> <strong>ver más</strong></h3>
-                                            <p>Descripción del artículo donde se indique de manera general de que trata.</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/blog-3.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Título del artículo</span> <strong>ver más</strong></h3>
-                                            <p>Descripción del artículo donde se indique de manera general de que trata.</p>
+                                <!-- Tarjeta 1 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('artículo 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen artículo 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del artículo </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
+                                            <a>Detalles del artículo.</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/blog-3.jpg" alt="Image">
+                                
+                                <!-- Tarjeta 2 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('artículo 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen artículo 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del artículo </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
+                                            <a>Detalles del artículo.</a>
+                                        </div>
+                                    </div>
                                 </div>
+                        
+                                <!-- Tarjeta 3 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalArticulo" onclick="openModal('artículo 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen artículo 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del artículo </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del artículo.</p>
+                                            <a>Detalles del artículo.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
-                        <div id="snacks" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                   
-                                 
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/blog-3.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="beverages" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/blog-3.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Título del artículo</span> <strong>ver más</strong></h3>
-                                            <p>Descripción del artículo donde se indique de manera general de que trata.</p>
-                                        </div>
-                                    </div>
-                                   
-                                   
-                                  
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/blog-3.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Menu End -->
-
-                            
-                            <!-- Agrega más tarjetas aquí de la misma forma -->
-                        </div>
+                        
+         
                         
                         <!-- Modal -->
                         <div class="modal fade" id="myModalArticulo" tabindex="-1" aria-labelledby="myModalLabelartículo" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="myModalLabelartículo">Detalles del artículo</h5>
+                                        <h3 class="modal-title" id="myModalLabelartículo">Título del Artículo</h3>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="col-md-8">
-                                        <h3>Título del Artículo</h3>
-                                        <p><strong>Autor:</strong></p>
-                                        <p><strong>Categoría:</strong></p>
-                                        <p><strong>Fecha de publicación:</strong></p>
-                                        <p><strong>Fuente:</strong></p>
-                                        <p><strong>Número de palabras:</strong></p>
-                                        <p><strong>Tiempo estimado de lectura:</strong></p>
-                                        <p><strong>Etiquetas:</strong></p>
+                                       
+                                        <p><i class="far fa-user"></i> Autor:</p>
+                                        <p><i class="far fa-calendar-alt"></i> Fecha de publicación.</p>   
                                       
                                         <p><strong>Resumen:</strong></p>
                                         <p><strong>Conclusiones:</strong></p>
@@ -431,89 +308,74 @@
                     <!-- libros -->
                     <div id="libros" class="container tab-pane fade">
 
+            
                         <div class="section-header text-center">
                      
                             <h2>Libros</h2>
                         </div>
-
-
-
-                           <!-- Aquí va el contenido de la página -->
-                           <div class="container">
-                            <!-- Tarjetas -->
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 1', 'Detalles más detallados sobre el Informe 1.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 1" class="card-image">
-                                <div class="card-content">
-                                    
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
-                                </div>
-                            </div>
-                            
+                    
                         
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 2', 'Detalles más detallados sobre el Informe 2.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 2" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
+                        <!-- Aquí va el contenido de la página -->
+                        <div class="container">
+                            <div class="row">
+                                <!-- Tarjeta 1 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalLibro" onclick="openModal('libro 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen libro 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del libro </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del libro.</p>
+                                            <a>Detalles del libro.</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
+                                
+                                <!-- Tarjeta 2 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalLibro" onclick="openModal('libro 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen libro 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del libro </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del libro.</p>
+                                            <a>Detalles del libro.</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
+                                <!-- Tarjeta 3 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalLibro" onclick="openModal('libro 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen libro 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título del libro </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del libro.</p>
+                                            <a>Detalles del libro.</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card" data-toggle="modal" data-target="#myModalLibros" onclick="openModal('Informe 3', 'Detalles más detallados sobre el Informe 3.')">
-                                <img src="img/blog-3.jpg" alt="Imagen Informe 3" class="card-image">
-                                <div class="card-content">
-                                    <h3>Título del libro</h3>
-                                    <p><i class="far fa-calendar-alt"></i> Fecha del publicación.</p>
-                                    <p>Detalles del libro.</p>
-                                </div>
-                            </div>
-                        
-                            
-                            <!-- Agrega más tarjetas aquí de la misma forma -->
                         </div>
                         
+         
+                        
                         <!-- Modal -->
-                        <div class="modal fade" id="myModalLibros" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="myModalLibro" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="myModalLabel">Detalles del Informe</h5>
+                                        <h3 class="modal-title" id="myModalLabel">Título del libro</h3>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="col-md-8">
-                                        <h3>Título del libro</h3>
-                                        <p><strong>Autor:</strong> </p>
+                        
+                                        <p><i class="far fa-user"></i> Autor:</p>
+                                        <p><i class="far fa-calendar-alt"></i> Fecha de publicación.</p> 
                                         <p><strong>Género:</strong>  </p>
                                         <p><strong>Año de publicación:</strong> 
                                         <p><strong>Editorial:</strong>  </p>
@@ -558,13 +420,204 @@
 
                     <!-- videos -->
                     <div id="videos" class="container tab-pane fade">
-                        <a>Aquí van los videos</a>
+                     
+
+                        <div class="section-header text-center">
+                            <h2>Videos</h2>
+                        </div>
+                        
+                        <!-- Aquí va el contenido de la página -->
+                        <div class="container">
+                            <div class="row">
+                                <!-- Tarjeta 1 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalVideo" onclick="openModal('video 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen video 1" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3>Título del video</h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del video</p>
+                                            <a>Detalles del video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Tarjeta 2 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalVideo" onclick="openModal('video 2', 'Detalles más detallados sobre el artículo 2.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen video 2" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3>Título del video</h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del video</p>
+                                            <a>Detalles del video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Tarjeta 3 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalVideo" onclick="openModal('video 3', 'Detalles más detallados sobre el artículo 3.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen video 3" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3>Título del video</h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha del video</p>
+                                            <a>Detalles del video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModalVideo" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="myModalLabel">Título del video</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><i class="far fa-user"></i> Autor: Nombre del autor</p>
+                                        <p><i class="far fa-calendar-alt"></i> Fecha de publicación: Fecha del video</p>
+                                        <p><strong>Descripción:</strong> Descripción del video seleccionado.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br><br>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
                     </div>
                     <!-- fin de videos -->
 
                     <!-- entrevistas -->
                     <div id="entrevistas" class="container tab-pane fade">
-                        <a>Aquí van las entrevistas</a>
+                        
+                        
+                        <div class="section-header text-center">
+                     
+                            <h2>Entrevistas</h2>
+                        </div>
+                    
+                        
+                        <!-- Aquí va el contenido de la página -->
+                        <div class="container">
+                            <div class="row">
+                                <!-- Tarjeta 1 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalEntrevista" onclick="openModal('entrevista 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen entrevista 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título de entrevista </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha entrevista.</p>
+                                            <a>Detalles del artículo.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Tarjeta 2 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalEntrevista" onclick="openModal('entrevista 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen entrevista 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título de entrevista </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha de entrevista.</p>
+                                            <a>Detalles de entrevista.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Tarjeta 3 -->
+                                <div class="col-md-4">
+                                    <div class="card" data-toggle="modal" data-target="#myModalEntrevista" onclick="openModal('entrevista 1', 'Detalles más detallados sobre el artículo 1.')">
+                                        <img src="img/blog-2.jpg" alt="Imagen entrevista 1" class="card-image">
+                                        <div class="card-content">
+                                            <h3>Título de entrevista </h3>
+                                            <p><i class="far fa-user"></i> Nombre de quien publica</p>
+                                            <p><i class="far fa-calendar-alt"></i> Fecha de entrevista.</p>
+                                            <a>Detalles de entrevista.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+         
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModalEntrevista" tabindex="-1" aria-labelledby="myModalLabelartículo" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="myModalLabelartículo">Título de la entrevista</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-8">
+                                       
+                                        <p><i class="far fa-user"></i> Autor:</p>
+                                        <p><i class="far fa-calendar-alt"></i> Fecha de publicación.</p>   
+                                      
+                                        <p><strong>Resumen:</strong></p>
+                                        <p><strong>Conclusiones:</strong></p>
+                                        <p><strong>Referencias:</strong></p>
+                                    </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+    
+
+                        
+                    </div>
+
+                        
                     </div>
                     <!-- fin de entrevistas -->
 
