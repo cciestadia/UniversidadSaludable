@@ -577,11 +577,62 @@ iframe {
     background-color: #0055a5; /* Color más claro al pasar el mouse */
 }
 
-
-
-
-
 /*******************************/
+/******* Estilos para img de lineas de investigadores *******/
+/*******************************/
+
+.about-pequena {
+    width: 1000px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    overflow: hidden;
+    border-radius: 10px; /* Redondea los bordes */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex; /* Para centrar verticalmente */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.about-pequena img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-destacado {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #336699;
+/*   font-style: italic;*/
+  }
+
+  .custom-btn .enlace-blanco {
+    color: white; /* Establece el color del texto del enlace a blanco */
+    text-decoration: none; /* Opcional: Elimina el subrayado predeterminado del enlace */
+  }
+  
+    .custom-btn .enlace-blanco:hover {
+    color: #0056b3;
+    }
+
+    .texto-negritas {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color: #060707;
+      }    
+
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) { /* Para pantallas medianas y pequeñas */
+    .about-pequena {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: 150px; /* Altura ajustada */
+    }
+}
+
+@media (max-width: 576px) { /* Para pantallas muy pequeñas */
+    .about-pequena {
+        height: 100px; /* Altura aún más ajustada */
+    }
+}/*******************************/
 /******* Estilos para modal de investigadores *******/
 /*******************************/
 
