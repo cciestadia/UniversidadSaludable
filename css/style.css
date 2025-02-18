@@ -215,17 +215,17 @@ iframe {
 
 /* Ajuste para que el contenido esté en el lado derecho */
 .card-content {
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
 
-.card h3 {
+.card h3{
     color: #1661bd;
-    margin-top: 1px;
+    margin-top: 10px;
     font-size: 1.1rem;
+    text-align: left;
 }
 
     
@@ -239,8 +239,8 @@ iframe {
 .card a {
     color: #000000;
     font-size: 0.9rem;
-    margin: 1px 0; /* Reduce el margen superior e inferior */
-    line-height: 3; /* Reduce el espacio entre líneas */
+    margin-top: auto;
+    line-height: 3;
 }
 
 
@@ -555,11 +555,13 @@ iframe {
     flex-direction: column; /* Mantiene "Nombre" en su posición */
 }
 
+
+
 .info-container {
     display: flex;
-    justify-content: space-between; /* Separa el texto y el botón */
-    align-items: left; /*Alinea verticalmente el texto y el botón */
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .custom-btn {
@@ -1451,7 +1453,7 @@ iframe {
 }
 
 .team .team-text p {
-    margin: 0;
+    margin-top: auto;
     font-size: 16px;
 }
 
