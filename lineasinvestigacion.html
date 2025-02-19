@@ -21,6 +21,9 @@
          <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
          <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
          <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+             <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
  
          <!-- Template Stylesheet -->
          <link href="css/style.css" rel="stylesheet">
@@ -201,6 +204,7 @@
                     </div>
                     <!-- Video Modal End -->
                     <br>
+        </div>
             <!--Termina Universidad saludable -->
 
             <!-- Sección FPST Start -->
@@ -229,36 +233,57 @@
                                          las condiciones del ambiente laboral.                                   
                                     </p>
                                     <p>Conoce algunos de ellos:</p>
-                                    <p>
-                                        <div class="col-lg-4">
-                                        <li class="nav-item">
-                                            <a href="fprst_completo.pdf" data-bs-toggle="modal">Estrés laboral</a>
-                                        </li>
-                                                                                
-                                        <li class="nav-item">
-                                            <a href="#informes">Fátiga</a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="#informes">Sindróme de Burnout</a>
-                                        </li>
 
-                                        <li class="nav-item">
-                                            <a href="#informes">Karoshi</a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="#informes">Workaholic</a>
-                                        </li>
+                    <!-- Enlaces Factores Psicosociales -->
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#estresModal">Estrés laboral</a>
+                                </li> 
+                            </div>
 
-                                    </p>
-                              
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#burnoutModal">Burnout</a>
+                                </li> 
+                            </div>
+
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#fatigaModal">Fatiga nerviosa</a>
+                                </li> 
+                            </div>
+
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#acosoModal">Acoso laboral</a>
+                                </li> 
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#adiccionModal">Adicción al trabajo</a>
+                                </li> 
+                            </div>
+
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#karoshiModal">Karoshi</a>
+                                </li> 
+                            </div>
+                            <div class="col-lg-4">
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#engagementModal">Engagement</a>
+                                </li> 
+                            </div>
+                            <br>
+                    <!-- Terminan los enlaces Factores Psicosociales -->
                                     
                                     <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
-                                     <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
-                                     Cuestionarios
-                                     </button>
-                                     <!-- <a class ="btm custom-btn" Close -->
+                                    <a href="fpst.html" class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
+                                        Cuestionarios
+                                    </a>
+                                    <!-- <a class ="btm custom-btn" Close -->
                                 </div>
                             </div>
                         </div>
@@ -266,7 +291,214 @@
                 </div>
             </div>
 
-                                <!-- About Start -->
+<!-- Modal estrés -->
+<div class="modal fade" id="estresModal" tabindex="-1" aria-labelledby="estresModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="estresModalLabel">Estrés Laboral</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/estres.jpeg" alt="Imagen de Estrés Laboral" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">La Organización Mundial de la Salud (OMS) define el estrés laboral como 
+                    la respuesta que puede ocurrir cuando las exigencias del trabajo no se 
+                    ajustan a las capacidades, los recursos o las necesidades del trabajador. 
+                    En otras palabras, es un estado de tensión que se produce cuando las personas 
+                    sienten que no pueden hacer frente a las demandas de su trabajo.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal burnout -->
+<div class="modal fade" id="burnoutModal" tabindex="-1" aria-labelledby="burnoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="burnoutModalLabel">Síndrome de Burnout</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/burnout.jpeg" alt="Imagen de burnout" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">El burnout, también conocido como el síndrome del trabajador quemado o síndrome de desgaste profesional, es un trastorno 
+                    psicológico que se produce como respuesta a un estrés laboral crónico. Se caracteriza por un estado de agotamiento 
+                    mocional, despersonalización y una disminución en la eficacia personal.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal burnout-->
+
+
+<!-- Modal fatiga -->
+<div class="modal fade" id="fatigaModal" tabindex="-1" aria-labelledby="fatigaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fatigaModalLabel">Fátiga Nerviosa</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/fatiga.jpeg" alt="Imagen de Fatiga" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">La fatiga nerviosa, también conocida como fatiga mental o agotamiento mental, es un estado de cansancio extremo que afecta 
+                    la capacidad cognitiva y emocional de una persona. Se caracteriza por una disminución en la energía mental, dificultad para 
+                    concentrarse, problemas de memoria y sensación de agotamiento, incluso después de un período de descanso.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal fatiga nerviosa-->
+
+
+<!-- Modal acoso -->
+<div class="modal fade" id="acosoModal" tabindex="-1" aria-labelledby="acosoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="acosoModalLabel">Acoso laboral</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/acoso.jpeg" alt="Imagen de Acoso Laboral" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">El acoso laboral, también conocido como mobbing, es una forma de violencia psicológica que se produce en el entorno de trabajo.
+                     Consiste en una serie de conductas hostiles y sistemáticas, ya sea de parte de un compañero, superior o subordinado, dirigidas 
+                     hacia una persona con el fin de intimidarla, humillarla, excluirla o menospreciarla. 
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal acoso laboral-->
+
+
+<!-- Modal Adicción al trabajo -->
+<div class="modal fade" id="adiccionModal" tabindex="-1" aria-labelledby="adiccionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="adiccionModalLabel">Adicción al trabajo</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/adiccion.jpeg" alt="Imagen de Adiccion al trabajo" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">La adicción al trabajo, también conocida como "workaholism" en inglés, 
+                    es un comportamiento compulsivo y obsesivo que lleva a una persona a dedicar una cantidad excesiva 
+                    de tiempo y energía al trabajo, desatendiendo otras áreas importantes de su vida, como las relaciones 
+                    personales, la salud y el bienestar emocional.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal adicción al trabajo-->
+
+<!-- Modal Karoshi -->
+<div class="modal fade" id="karoshiModal" tabindex="-1" aria-labelledby="karoshiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="karoshiModalLabel">Karoshi</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/karoshi.jpeg" alt="Imagen Karoshi" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">El síndrome de Karoshi es un término japonés que se traduce como "muerte por exceso de trabajo". 
+                    Se refiere a la muerte súbita, generalmente por un ataque al corazón o un derrame cerebral, causada por el estrés y la fatiga 
+                    extrema relacionados con el trabajo.
+                    Este síndrome no es un trastorno médico específico, sino más bien una condición social y laboral que se ha reconocido en Japón 
+                    y en otros países con culturas de trabajo similares.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal Karoshi-->
+
+
+<!-- Modal Engagement -->
+<div class="modal fade" id="engagementModal" tabindex="-1" aria-labelledby="engagementModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="engagementModalLabel">Factor positivo<br>Engagement</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen añadida aquí -->
+                <img src="img/engagement.jpeg" alt="Imagen Engagement" class="img-fluid me-3 float-start" style="max-width: 200px;">               
+                 <p style="text-align: justify;">El engagement se refiere al nivel de compromiso, interacción y conexión emocional que 
+                    una persona tiene con una marca, producto, servicio o contenido. Va más allá de una simple transacción o interacción 
+                    superficial, implica una relación más profunda y duradera.
+                </p>
+            </div>
+            <div class="modal-footer">
+        <!--   <a class="btn custom-btn" href="">Book A Table</a> -->
+            <a href="fprst_completo.pdf" class="enlace-blanco">Más información</a>
+        <br>
+        <br>
+        <!-- <a class ="btm custom-btn" Close -->
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End modal Engagement-->
+
+
+
+        <!-- About Start -->
             <div class="about">
                 <div class="container">
                     <div class="row align-items-center">
@@ -342,7 +574,8 @@
           <script src="lib/tempusdominus/js/moment.min.js"></script>
           <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
           <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-          
+
+        
           <!-- Contact Javascript File -->
           <script src="mail/jqBootstrapValidation.min.js"></script>
           <script src="mail/contact.js"></script>
