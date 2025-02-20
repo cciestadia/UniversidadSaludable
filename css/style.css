@@ -2332,3 +2332,14 @@ iframe {
 .footer .copyright p a:hover {
     color: #719a0a;
 }
+
+
+
+#toggleForm {
+    border: 1.5px solid rgb(58, 122, 177);
+    background-color: white;
+    color: rgb(58, 122, 177);
+}
+#toggleForm:hover { 
+    color: rgb(117, 117, 117);
+}

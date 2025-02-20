@@ -132,3 +132,20 @@
 
 
 
+document.getElementById("toggleForm").addEventListener("click", function() {
+    let loginForm = document.getElementById("loginForm");
+    let registerForm = document.getElementById("registerForm");
+    let formTitle = document.getElementById("formTitle");
+
+    if (loginForm.classList.contains("d-none")) {
+        loginForm.classList.remove("d-none");
+        registerForm.classList.add("d-none");
+        formTitle.innerText = "Iniciar Sesión";
+        this.innerHTML = 'Regístrate si no tienes una cuenta';
+    } else {
+        loginForm.classList.add("d-none");
+        registerForm.classList.remove("d-none");
+        formTitle.innerText = "Registro de Usuario";
+        this.innerHTML = 'Inicia sesión si ya tienes una cuenta';
+    }
+});
