@@ -201,6 +201,7 @@ iframe {
     font-size: 12px;
 }
 
+ 
 
 
 .card:hover {
@@ -263,11 +264,14 @@ iframe {
 /* Estilos para el modal */
 .modal-content {
     border-radius: 10px;
+    
 }
 
 .modal-body {
     padding: 20px;
 }
+
+ 
 
 
 
@@ -1229,6 +1233,9 @@ iframe {
         font-size: 13px !important; /* Ajusta el tamaño de fuente en pantallas pequeñas */
     }
 }
+
+
+
 
 
 
