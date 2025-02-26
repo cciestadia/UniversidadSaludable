@@ -31,6 +31,7 @@ a {
     font-weight: 600;
     color: #336699;
     transition: .3s;
+    justify-content: center;
 }
 
 a:hover,
