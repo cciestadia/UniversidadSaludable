@@ -504,7 +504,7 @@ iframe {
 
 .carousel .carousel-text p {
     color: #52748d;
-    text-align: justify;
+    text-align: center;
     font-size: 20px;
     margin-bottom: 35px;
 }
@@ -1542,7 +1542,7 @@ iframe {
 }
 
 .testimonial .testimonial-img img {
-    width: 100%;
+    width: 105%;
     border-radius: 100px;
 }
 
