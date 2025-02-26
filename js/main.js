@@ -209,7 +209,7 @@ function validarLogin(event) {
     let errorMsg = document.getElementById("errorMsg");
 
     if (usuario === "usuario" && contrasena === "usuario") {
-        window.location.href = "usuarioLogin/usuario.html";
+        window.location.href = "html/index.html";
     } else {
         errorMsg.style.display = "block";
     }
