@@ -458,6 +458,7 @@ iframe {
     height: 100%;
     text-align: right;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .carousel .carousel-img::after {
@@ -755,9 +756,14 @@ iframe {
 /******* Section Header ********/
 /*******************************/
 .section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
     position: relative;
     margin-bottom: 45px;
     text-align: center;
+    height: 100%;   
 }
 
 .section-header p {
