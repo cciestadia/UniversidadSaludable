@@ -21,6 +21,8 @@ h5,
 h6 {
     color: #454545;
     font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 a {
@@ -96,7 +98,11 @@ a:focus {
     margin-left: 0;
 }
 
-
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
 
 
 /**********************************/
@@ -1479,6 +1485,7 @@ iframe {
 .team .team-text p {
     margin-top: auto;
     font-size: 16px;
+    color: #454545;
 }
 
 
