@@ -9,6 +9,8 @@
 
         <!-- Favicon -->
         <link href="img/utn-sincolor.png" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
@@ -64,7 +66,7 @@
                         <h2>FPST</h2>
                     </div>
                     <div class="col-12">
-                        <a class="page-header">(Factores Psicosociales en el Trabajo)</a>
+                        <a class="page-header">Factores Psicosociales en el Trabajo</a>
       
                     </div>
                 </div>
@@ -87,133 +89,1022 @@
 <div class="col-md-6">
     <div class="blog-item">
         <div class="blog-img">
-            <img src="img/blog-1.jpg" alt="Blog">
+            <img src="img/Post_Sonnentang & Fritz.png" alt="Blog">
         </div>
         <div class="blog-content">
-            <h2 class="blog-title">Título de cuestionario.</h2>
+            <h2 class="blog-title">Cuestionario de experiencias de recuperación -Sonnentang & Fritz-</h2>
             <div class="blog-meta">
-                <p><i class="far fa-user"></i> Nombre de quien publica</p>
-                <p><i class="far fa-list-alt"></i> Categoría</p>
-                <p><i class="far fa-calendar-alt"></i> 01-enero-2025</p>
+                <p><i class="far fa-user"></i> Desarrollado por los investigadores Sonja Sonnentang y Christoph Fritz.</p>
+                <p><i class="far fa-list-alt"></i> Categoría: Evaluación del estrés laboral</p>
+                <p><i class="far fa-calendar-alt"></i>2007</p>
             </div>
             <div class="blog-text">
-                <p>Descripción del cuestionario.</p>
+                <p>Evalua el estrés laboral y sus efectos. Basado en investigaciones previas este cuestionario mide diversos aspectos relacionados con las demandas y 
+                    recursos en el trabajo, proporcionando una visión integral del bienestar de los empleados 
+                    frente a las exigencias de su ambiente profesional.
+                </p>
                 <!-- Botón para abrir el modal -->
                 <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
                     Realizar cuestionario
+                </button>
+                <a href="pdf/Consentimiento.pdf" class="btn btn-link">
+                    <i class="bi bi-file-earmark-pdf me-2"></i> Consentimiento informado
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testModalLabel">Cuestionario Sonnentang & Fritz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario del Test primera parte -->
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="matricula" class="form-label">Matrícula</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu matrícula">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ejemplo: usuario@email.com">
+                    </div>
+                    <p> 
+                        A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
+                        Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
+                        de acuerdo a las escalas que se le mostrarán.
+                    </p>   
+                    </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#distanciamientoModal">Siguiente</button>
                 </button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+
+<!-- Modal 2  distanciamiento-->
+<div class="modal fade" id="distanciamientoModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="testModalLabel">Formulario del cuestionario</h5>
+                <h5 class="modal-title" id="distanciamientoModalLabel">Distanciamiento Psicológico</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!-- Formulario del Test -->
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <form>
+                    <p> 
+                        Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
+                        según la siguiente escala. Sólo puede escoger una respuesta por pregunta.
+                        Conteste todas las preguntas.
+                        <br>
+                        <br>
+                        1 = Totalmente en desacuerdo  
+                        <br>     
+                        2 = En desacuerdo         
+                        <br>
+                        3 = Ni de acuerdo ni desacuerdo
+                        <br>         
+                        4 = De acuerdo     
+                        <br>
+                        5 = Totalmente de acuerdo
+                        </p>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                        <p>Comenzamos</p>
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Después del trabajo soy capaz de desconectar?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
+
                     <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ejemplo: usuario@email.com">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Cuándo salgo del trabajo, me olvido completamente del trabajo?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
+
                     <div class="mb-3">
-                        <label for="pregunta1" class="form-label">Pregunta 1: ¿Ejemplo de pregunta?</label>
-                        <select class="form-select" id="pregunta1">
-                            <option selected>Selecciona una opción...</option>
-                            <option value="1">Opción 1</option>
-                            <option value="2">Opción 2</option>
-                            <option value="3">Opción 3</option>
-                        </select>
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Soy capaz de distanciarme de mi trabajo?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
+
                     <div class="mb-3">
-                        <label for="pregunta2" class="form-label">Pregunta 2: ¿Otra pregunta?</label>
-                        <textarea class="form-control" id="pregunta2" rows="3" placeholder="Escribe tu respuesta"></textarea>
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>A veces me tomo un respiro de las demandas de mi trabajo</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#relajacionModal">Siguiente</button>
+
             </div>
         </div>
     </div>
 </div>
+
+  <!-- Fin modal 2 Distanciamiento -->
+
+
+<!-- Modal 3  relajación-->
+<div class="modal fade" id="relajacionModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="relajacionModalLabel">Relajación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                <form>
+                    <p> 
+                        Conteste todas las preguntas.
+                        <br>
+                        <br>
+                        1 = Totalmente en desacuerdo  
+                        <br>     
+                        2 = En desacuerdo         
+                        <br>
+                        3 = Ni de acuerdo ni desacuerdo
+                        <br>         
+                        4 = De acuerdo     
+                        <br>
+                        5 = Totalmente de acuerdo
+                        </p>
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Soy capaz de dejar aun lado mi trabajo y relajarme?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>
+                                ¿Realizo actividades que me ayudan a sentirme relajado?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Después del trabajo me tomo mi tiempo para descansar?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Me tomo mi tiempo para realizar actividades que me distraen y satisfacen?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#retosModal">Siguiente</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Fin modal 3  Relajación -->
+
+
+<!-- Modal 4 retos-->
+<div class="modal fade" id="retosModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="retosModalLabel">Busqueda de retos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                <form>
+                    <p> 
+                        Conteste todas las preguntas.
+                        <br>
+                        <br>
+                        1 = Totalmente en desacuerdo  
+                        <br>     
+                        2 = En desacuerdo         
+                        <br>
+                        3 = Ni de acuerdo ni desacuerdo
+                        <br>         
+                        4 = De acuerdo     
+                        <br>
+                        5 = Totalmente de acuerdo
+                        </p>
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Fuera del trabajo trato de aprender cosas nuevas?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Fuera del trabajo busco nuevos retos intelectuales?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Después del trabajo realizo otras actividades que suponen un reto para mí?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Después del trabajo realizo otras actividades que suponen un reto para mí?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+                    <div class="mb-3">
+                        <!-- Opción de selección (Radio Buttons) -->
+                        <p>¿Después del trabajo realizo otras actividades que abren mis horizontes?</p>
+                        <label for="1">1</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="2">2</label>
+                        <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                        <label for="3">3</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="4">4</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="5">5</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#controlModal">Siguiente</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Fin modal 4 Retos -->
+
+
+<!-- Modal 5 control-->
+<div class="modal fade" id="controlModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="controlModalLabel">Control</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                <form>
+                    <p> 
+                     Conteste todas las preguntas.
+                        <br>
+                        <br>
+                        1 = Totalmente en desacuerdo  
+                        <br>     
+                        2 = En desacuerdo         
+                        <br>
+                        3 = Ni de acuerdo ni desacuerdo
+                        <br>         
+                        4 = De acuerdo     
+                        <br>
+                        5 = Totalmente de acuerdo
+                    </p>
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Puedo decidir por mí mismo que actividades hacer para mi tiempo libre?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Fuera del trabajo puedo decidir mí horario?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Decido por mí mismo como pasar mi tiempo libre?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Fuera del trabajo, las tareas que tengo que hacer las llevo a cabo en el momento en el que yo decido?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#finModal">Siguiente</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Fin modal 5 Control -->
+
+  <!-- Inicio modal envio respuesta  -->
+
+<div class="modal fade" id="finModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="finModalLabel">Cuestionario Sonnentang & Fritz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario del Test primera parte -->
+                <form>
+                    <p> 
+                    Cuestionario de experiencias de recuperación. 
+                    <br>
+                    Sonnentang & Fritz 2007.
+                    <br>
+                    Se ha registrado correctamente
+                    </p>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Inicio modal  -->
 
 
 <div class="col-md-6">
     <div class="blog-item">
         <div class="blog-img">
-            <img src="img/blog-2.jpg" alt="Blog">
+            <img src="img/Post_fatigasub.png" alt="Blog">
         </div>
         <div class="blog-content">
-            <h2 class="blog-title">Título de cuestionario.</h2>
+            <h2 class="blog-title">Cuestionario YOSREETAKE</h2>
             <div class="blog-meta">
-                <p><i class="far fa-user"></i> Nombre de quien publica</p>
-                <p><i class="far fa-list-alt"></i> Categoría</p>
-                <p><i class="far fa-calendar-alt"></i> 01-enero-2025</p>
+                <p><i class="far fa-user"></i> Desarrollado por el psicólogo japonés Yasuo Yamamoto</p>
+                <p><i class="far fa-list-alt"></i> Categoría: Evaluación de Fatiga subjetiva</p>
+                <p><i class="far fa-calendar-alt"></i> 1982</p>
             </div>
             <div class="blog-text">
-                <p>Descripción del cuestionario.</p>
+                <p>Este cuestionario esta diseñado específicamente para medir los síntomas de fatiga subjetiva que 
+                    experimentan los trabajadores, proporcionando una herramienta útil en la evaluación del 
+                    bienestar laboral y la gestión de la fatiga, un factor clave en el rendimiento y la salud 
+                    en el entorno laboral. Permite identificar posibles problemas de fatiga, estrés o agotamiento, 
+                    lo que puede contribuir a mejorar la productividad y la calidad de vida laboral.
+                </p>
                 <!-- Botón para abrir el modal -->
-                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
+                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#test1Modal">
                     Realizar cuestionario
                 </button>
+                <a href="pdf/Consentimiento.pdf" class="btn btn-link">
+                    <i class="bi bi-file-earmark-pdf me-2"></i> Consentimiento informado
+                </a>
+
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+<!-- Modal  TestModal1-->
+<div class="modal fade" id="test1Modal" tabindex="-1" aria-labelledby="test1ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="testModalLabel">Formulario del cuestionario</h5>
+                <h5 class="modal-title" id="test1ModalLabel">Cuestionario YOSREETAKE </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <!-- Formulario del Test -->
                 <form>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo">
                     </div>
+                    <div class="mb-3">
+                        <label for="matrícula" class="form-label">Matrícula</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu matrícula">
+                    </div>
+
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="email" placeholder="Ejemplo: usuario@email.com">
                     </div>
-                    <div class="mb-3">
-                        <label for="pregunta1" class="form-label">Pregunta 1: ¿Ejemplo de pregunta?</label>
-                        <select class="form-select" id="pregunta1">
-                            <option selected>Selecciona una opción...</option>
-                            <option value="1">Opción 1</option>
-                            <option value="2">Opción 2</option>
-                            <option value="3">Opción 3</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pregunta2" class="form-label">Pregunta 2: ¿Otra pregunta?</label>
-                        <textarea class="form-control" id="pregunta2" rows="3" placeholder="Escribe tu respuesta"></textarea>
-                    </div>
-                </form>
+                    <p> 
+                        A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
+                        Por favor, responda las siguientes preguntas de acuerdo a lo que siente usted en este preciso momento. 
+                    </p>
+                    </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos1Modal">Siguiente</button>
+
             </div>
         </div>
     </div>
 </div>
+
+<!-- Modal 2  Yos1-->
+<div class="modal fade" id="Yos1Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Yos1ModalLabel">Cuestionario evaluación fátiga </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                <form>
+                    <p> 
+                        Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                        Conteste todas las preguntas.
+                        <br>
+                    </p>
+                    <div class="mb-3">
+                        <p>Comenzamos</p>
+                        <br>
+                            <p>¿Siente pesadez en la cabeza?</p>
+                            <label for="si">Si</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="no">No</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <p>¿Siente el cuerpo cansado?</p>
+                        <label for="si">Si</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="no">No</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                    <div class="mb-3">
+                        <p>¿Tiene cansancio en las piernas?</p>
+                        <label for="si">Si</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="no">No</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                        <p>¿Tiene deseos de bostezar?</p>
+                        <label for="si">Si</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="no">No</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <p>¿Siente la  cabeza  aturdida, atontada?</p>
+                            <label for="si">Si</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="no">No</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+            
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos2Modal">Siguiente</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3  Yos2-->
+<div class="modal fade" id="Yos2Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Yos2ModalLabel">Cuestionario para evaluar la fátiga </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <form>
+                <p> 
+                    Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                    Conteste todas las preguntas.
+                    <br>
+                </p>
+                <div class="mb-3">
+                    <p>¿Esta  somnoliento?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+            </div>
+
+                <div class="mb-3">
+                    <p>¿Siente la vista cansada?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Siente rigidez o torpeza en los movimientos?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿ Se siente poco firme e inseguro al estar de pie?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Tiene deseos de acostarse?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos3Modal">Siguiente</button>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+<!-- Modal 4  Yos3-->
+<div class="modal fade" id="Yos3Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Yos3ModalLabel">Cuestionario para evaluar la fátiga </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <form>
+                <p> 
+                    Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                    Conteste todas las preguntas.
+                    <br>
+                </p>
+                <div class="mb-3">
+                    <p>¿Siente dificultad para pensar?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+            </div>
+
+                <div class="mb-3">
+                    <p>¿Esta cansado de hablar?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Está nervioso?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Se siente incapaz de fijar la atención?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Se siente incapaz de ponerle atención a las cosas?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos4Modal">Siguiente</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Modal 5  Yos4-->
+<div class="modal fade" id="Yos4Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Yos4ModalLabel">Cuestionario para evaluar la fátiga </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <form>
+                <p> 
+                    Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                    Conteste todas las preguntas.
+                    <br>
+                </p>
+                <div class="mb-3">
+                    <p>¿Se le olvidan fácilmente las cosas?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+            </div>
+
+                <div class="mb-3">
+                    <p>¿Le falta confianza en si mismo?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Se siente ansioso?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Le cuesta trabajo mantener el cuerpo en una misma postura?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Se le agoto la paciencia?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos5Modal">Siguiente</button>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+                <!-- Modal 4  Yos5-->
+<div class="modal fade" id="Yos5Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Yos5ModalLabel">Cuestionario para evaluar la fátiga </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+            <form>
+                <p> 
+                    Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                    Conteste todas las preguntas.
+                    <br>
+                </p>
+                <div class="mb-3">
+                    <p>¿Tiene dolor de cabeza?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+            </div>
+
+                <div class="mb-3">
+                    <p>¿Siente los hombros entumecidos?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Tiene dolor de espalda?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Siente opresión al respirar?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+                <div class="mb-3">
+                    <p>¿Tiene sed?</p>
+                    <label for="si">Si</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    <label for="no">No</label>
+                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Yos6Modal">Siguiente</button>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+                <!-- Modal 5  Yos6-->
+                <div class="modal fade" id="Yos6Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="Yos6ModalLabel">Cuestionario para evaluar la fátiga </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- Formulario del Test primera parte -->
+                        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                            <form>
+                                <p> 
+                                    Conteste si o no, de acuerdo a lo que siente en este preciso momento.
+                                    Conteste todas las preguntas.
+                                    <br>
+                                </p>
+                                <div class="mb-3">
+                                    <p>¿Tiene la voz ronca?</p>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                    <label for="no">No</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            </div>
+                
+                                <div class="mb-3">
+                                    <p>¿Se siente mareado?</p>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                    <label for="no">No</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                </div>
+                
+                                <div class="mb-3">
+                                    <p>¿Le tiemblan los párpados?</p>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                    <label for="no">No</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                </div>
+                
+                                <div class="mb-3">
+                                    <p>¿Tiene temblor en las piernas o los brazos?</p>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                    <label for="no">No</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                </div>
+                
+                                <div class="mb-3">
+                                    <p>¿Se siente mal?</p>
+                                    <label for="si">Si</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                    <label for="no">No</label>
+                                    <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                </div>
+                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#fin2Modal">Siguiente</button>
+            
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+               <!-- Fin modal 5 Control -->
+
+  <!-- Inicio fin2modal modal envio respuesta  -->
+
+<div class="modal fade" id="fin2Modal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fin2ModalLabel">Cuestionario YOSREETAKE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario del Test primera parte -->
+                <form>
+                    <p> 
+                    Cuestionario de evaluación de fatiga. 
+                    <br>
+                    YOSREETAKE.
+                    <br>
+                    Se ha registrado correctamente.
+                    </p>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+           
+
+
 
 <div class="col-md-6">
     <div class="blog-item">
@@ -221,14 +1112,14 @@
             <img src="img/blog-3.jpg" alt="Blog">
         </div>
         <div class="blog-content">
-            <h2 class="blog-title">Título de cuestionario.</h2>
+            <h2 class="blog-title">Cuestionario Sonnentang & Fritz (2007).</h2>
             <div class="blog-meta">
                 <p><i class="far fa-user"></i> Nombre de quien publica</p>
                 <p><i class="far fa-list-alt"></i> Categoría</p>
                 <p><i class="far fa-calendar-alt"></i> 01-enero-2025</p>
             </div>
             <div class="blog-text">
-                <p>Descripción del cuestionario.</p>
+                <p> Este cuestionario esta diseñado para evaluar el estrés laboral y sus efectos en los empleados. </p>
                 <!-- Botón para abrir el modal -->
                 <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
                     Realizar cuestionario
@@ -344,8 +1235,51 @@
         </div>
     </div>
 </div>
+</div>
 
-                </div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testModalLabel">Cuestionario Sonnentang & Fritz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario del Test primera parte -->
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="matricula" class="form-label">Matrícula</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu matrícula">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ejemplo: usuario@email.com">
+                    </div>
+                    <p> 
+                        A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
+                        Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
+                        de acuerdo a las escalas que se le mostrarán.
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#distanciamientoModal">Siguiente</button>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
                 <div class="row">
                     <div class="col-12">
