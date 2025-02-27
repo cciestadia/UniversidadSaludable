@@ -144,7 +144,8 @@
                         A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
                         Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
                         de acuerdo a las escalas que se le mostrarán.
-                </form>
+                    </p>   
+                    </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -628,7 +629,7 @@
                     lo que puede contribuir a mejorar la productividad y la calidad de vida laboral.
                 </p>
                 <!-- Botón para abrir el modal -->
-                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#testModal">
+                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#test1Modal">
                     Realizar cuestionario
                 </button>
                 <a href="pdf/Consentimiento.pdf" class="btn btn-link">
@@ -640,39 +641,35 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+<!-- Modal  YOSREETAKE-->
+<div class="modal fade" id="test1Modal" tabindex="-1" aria-labelledby="test1ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="testModalLabel">Formulario del cuestionario</h5>
+                <h5 class="modal-title" id="test1ModalLabel">Cuestionario YOSREETAKE </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <!-- Formulario del Test -->
                 <form>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo">
                     </div>
+                    <div class="mb-3">
+                        <label for="matrícula" class="form-label">Matrícula</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu matrícula">
+                    </div>
+
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="email" placeholder="Ejemplo: usuario@email.com">
                     </div>
-                    <div class="mb-3">
-                        <label for="pregunta1" class="form-label">Pregunta 1: ¿Ejemplo de pregunta?</label>
-                        <select class="form-select" id="pregunta1">
-                            <option selected>Selecciona una opción...</option>
-                            <option value="1">Opción 1</option>
-                            <option value="2">Opción 2</option>
-                            <option value="3">Opción 3</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pregunta2" class="form-label">Pregunta 2: ¿Otra pregunta?</label>
-                        <textarea class="form-control" id="pregunta2" rows="3" placeholder="Escribe tu respuesta"></textarea>
-                    </div>
-                </form>
+                    <p> 
+                        A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
+                        Por favor, responda las siguientes preguntas de acuerdo a lo que siente usted en este preciso momento. 
+                    </p>
+                    </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -681,6 +678,105 @@
         </div>
     </div>
 </div>
+
+<!-- Modal 2  page 1-->
+<div class="modal fade" id="distanciamientoModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="distanciamientoModalLabel">Distanciamiento Psicológico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Formulario del Test primera parte -->
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                <form>
+                    <p> 
+                        Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
+                        según la siguiente escala. Sólo puede escoger una respuesta por pregunta.
+                        Conteste todas las preguntas.
+                        <br>
+                        <br>
+                        1 = Totalmente en desacuerdo  
+                        <br>     
+                        2 = En desacuerdo         
+                        <br>
+                        3 = Ni de acuerdo ni desacuerdo
+                        <br>         
+                        4 = De acuerdo     
+                        <br>
+                        5 = Totalmente de acuerdo
+                        </p>
+                    <div class="mb-3">
+                        <p>Comenzamos</p>
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Después del trabajo soy capaz de desconectar?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Cuándo salgo del trabajo, me olvido completamente del trabajo?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>¿Soy capaz de distanciarme de mi trabajo?</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+
+                    <div class="mb-3">
+                            <!-- Opción de selección (Radio Buttons) -->
+                            <p>A veces me tomo un respiro de las demandas de mi trabajo</p>
+                            <label for="1">1</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="2">2</label>
+                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                            <label for="3">3</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">4</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#relajacionModal">Siguiente</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="col-md-6">
     <div class="blog-item">
