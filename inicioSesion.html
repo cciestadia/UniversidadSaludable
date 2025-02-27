@@ -84,10 +84,10 @@
                     <div class="contenedor__login-register">
                         
                         <!--Login real    -->
-                        <form action="html/index.html" method = "POST" class="formulario__login">
+                        <form action="html/index.html" method = "POST" class="formulario__login" onsubmit="validarLogin(event)">
                             <h2>Iniciar Sesión</h2>
-                            <input type="text" placeholder="Correo Electronico" name = "correo">
-                            <input type="password" placeholder="Contraseña" name = "contrasena">
+                            <input type="text" placeholder="Correo Electronico" id="usuario" name = "usuario">
+                            <input type="password" placeholder="Contraseña" id="contrasena" name = "contrasena">
                             <button class="btn custom-btn">
                                 Entrar
                             </button>

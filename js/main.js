@@ -203,14 +203,22 @@ anchoPage();
 
 // Borrar cuando esté la base, solo es de ejemplo
 function validarLogin(event) {
-    event.preventDefault();  
-    let usuario = document.getElementById("correo").value;
+    event.preventDefault(); 
+    let usuario = document.getElementById("usuario").value;
     let contrasena = document.getElementById("contrasena").value; 
     let errorMsg = document.getElementById("errorMsg");
 
     if (usuario === "usuario" && contrasena === "usuario") {
+        window.location.href = "html/indexUs.html";
+        return;
+    } else if(usuario === "administrador" && contrasena === "administrador"){
         window.location.href = "html/index.html";
-    } else {
+        return;
+    }  else if(usuario === "investigador" && contrasena === "investigador"){
+        window.location.href = "html/indexIn.html";
+        return;
+    } 
+    else {
         errorMsg.style.display = "block";
     }
 }
