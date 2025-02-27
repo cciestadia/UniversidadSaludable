@@ -331,7 +331,7 @@ iframe {
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
-    border-radius: 0;
+    border-radius: 25px;
     background: #f8f9fa;
 }
 
