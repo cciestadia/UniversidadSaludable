@@ -4985,6 +4985,7 @@ textarea.form-control-lg {
   --bs-accordion-body-padding-y: 1.1875rem;
   --bs-accordion-active-color: #384551;
   --bs-accordion-active-bg: var(--bs-paper-bg);
+  border-radius: 30px;
 }
 
 .accordion-button {
@@ -5068,6 +5069,7 @@ textarea.form-control-lg {
 .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
   border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
   border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  border-radius: 30px;
 }
 .accordion-item:last-of-type > .accordion-collapse {
   border-bottom-right-radius: var(--bs-accordion-border-radius);
@@ -10089,62 +10091,76 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
   --bs-accordion-btn-active-bg: var(--bs-accordion-active-bg);
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-btn-focus-shadow-width: 0;
+  border-radius: 30px;
 }
 .accordion .accordion-button::after {
   background: var(--bs-accordion-btn-color);
   mask-image: var(--bs-accordion-btn-icon);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+  border-radius: 30px;
 }
 .accordion .accordion-button:not(.collapsed)::after {
   background: var(--bs-accordion-btn-color);
   mask-image: var(--bs-accordion-btn-active-icon);
+  border-radius: 30px;
 }
 .accordion.accordion-without-arrow .accordion-button::after {
   background: none;
 }
 .accordion .accordion-item {
-  border-radius: var(--bs-accordion-border-radius);
+  border-radius: 30px;;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);  
 }
 .accordion .accordion-item > .accordion-header .accordion-button {
-  border-radius: var(--bs-accordion-inner-border-radius);
+  border-radius: 30px;;
 }
 .accordion .accordion-item:not(:first-of-type) {
   border-block-start: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-radius: 30px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);  
 }
 .accordion .accordion-item:not(:last-of-type) {
   margin-block-end: 0.5rem;
+  border-radius: 30px;
 }
 
 .accordion-item {
   box-shadow: var(--bs-accordion-box-shadow);
+  border-radius: 30px;
 }
 .accordion-item.active {
   background-color: var(--bs-accordion-active-bg);
   box-shadow: var(--bs-accordion-active-box-shadow);
+  border-radius: 30px;
 }
 
 .accordion-header {
   line-height: 1.375;
+  border-radius: 30px;
 }
 .accordion-header + .accordion-collapse .accordion-body {
   padding-block-start: 0;
   padding-inline-start: 1.4375rem;
+  border-radius: 30px;
 }
 
 /* Accordion border radius */
 .accordion-button {
   font-weight: inherit;
   padding-inline-end: 1.1875rem;
+  border-radius: 30px;
 }
 .accordion-button::after {
   margin-inline-end: initial;
   margin-inline-start: auto;
+  border-radius: 30px;
 }
 .accordion-button:not(.collapsed) {
   background-color: var(--bs-accordion-btn-active-bg);
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-btn-focus-shadow-width)) 0 var(--bs-accordion-border-color);
   padding-block-end: 0.793rem;
+  border-radius: 30px;
 }
 
 .breadcrumb {
@@ -23381,18 +23397,18 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
           .image-background {
             position: relative;
             width: 100%;
-            height: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: 350px;  
             border-radius: 30px;
           }
           
           .image-background img {
-            width: 150%; /* Hace la imagen más grande que la tarjeta */
+            width: 150%;  
             height: 80%;
-            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+            object-fit: cover; 
             position: absolute;
             top: 0;
-            left: 50%; /* Centra la imagen en el contenedor */
-            transform: translateX(-50%); /* Asegura que la imagen se mantenga centrada */
+            left: 50%;  
+            transform: translateX(-50%); 
             border-radius: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
           }
@@ -23400,9 +23416,9 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
           /* Estilo de la tarjeta */
           .custom-card {
             position: relative;
-            margin-top: -150px; /* Esto mueve la tarjeta hacia arriba, haciéndola superponerse con la imagen */
-            z-index: 1; /* Asegura que la tarjeta esté encima de la imagen */
-            max-width: 90%; /* La tarjeta será más estrecha que la imagen */
+            margin-top: -150px;  
+            z-index: 1;  
+            max-width: 90%;  
             margin-left: auto;
             margin-right: auto;
             border-radius: 30px;
@@ -23429,8 +23445,8 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
         
         .custom-btn:hover {
             background: transparent;
-            color: #003366; /* Azul oscuro */
-            border-color: #003366; /* Azul oscuro */
+            color: #003366; 
+            border-color: #003366; 
         }
         
 
@@ -23439,22 +23455,22 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
       border-radius: 30px;
     }
 
-    /* Border radius para los formularios dentro del modal */
+     
     .modal-body .form-control,
     .modal-body .form-select,
     .modal-body textarea {
       border-radius: 25px;
     }
 
-    /* Border radius para los botones del modal */
+     
     .modal-footer .btn {
       border-radius: 25px;
     }
 
-    /* Para que los botones estén alineados a la izquierda y derecha */
+     
     .modal-footer {
       display: flex;
-      justify-content: space-between; /* Los botones se distribuyen entre el espacio disponible */
+      justify-content: space-between;  
       width: 100%;
     }
 
@@ -23462,23 +23478,24 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
 @media (max-width: 767px) {
   .modal-footer {
     display: flex;
-    flex-direction: column; /* Los botones se apilan en pantallas pequeñas */
-    align-items: center; /* Centra los botones horizontalmente */
-    justify-content: center; /* Asegura que los botones estén centrados */
-    width: 100%; /* Asegura que el modal footer ocupe todo el ancho */
-    padding: 10px; /* Añadir algo de espacio alrededor del footer */
+    flex-direction: column;  
+    align-items: center; 
+    justify-content: center;  
+    width: 100%;  
+    padding: 10px; 
   }
 
   .modal-footer .btn {
-    width: 80%; /* Los botones ocupan el 80% del ancho del contenedor */
-    margin-bottom: 10px; /* Añadimos espacio entre los botones */
-    border-radius: 25px; /* Aplicamos el borde redondeado a los botones */
-    text-align: center; /* Asegura que el texto del botón esté centrado */
+    width: 80%;  
+    margin-bottom: 10px; 
+    border-radius: 25px; 
+    text-align: center;  
   }
 
   .modal-footer .btn:last-child {
-    margin-bottom: 0; /* Quitamos el margen en el último botón */
+    margin-bottom: 0;  
   }
 }
+
 
  
