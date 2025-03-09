@@ -42,7 +42,7 @@
                                                     <th>N°</th>
                                                     <th>Título</th>
                                                     <th>Descripción</th>
-                                                    <th>Enlace</th>
+                                                    <th>Video</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -50,7 +50,28 @@
                                                     <td>1</td>
                                                     <td>Video 1</td>
                                                     <td>Descripción del video 1</td>
-                                                    <td><a href="https://www.youtube.com/watch?v=video1" target="_blank">Ver Video</a></td>
+                                                    <td><button
+                                                        type="button"
+                                                        class="btn btn-primary"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#youTubeModal"
+                                                        data-theVideo="https://www.youtube.com/embed/EngW7tLk6R8">
+                                                        ver video
+                                                      </button></td>
+
+ 
+                              <!-- Modal -->
+                              <div class="modal fade" id="youTubeModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <iframe height="350" src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+  
+
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
