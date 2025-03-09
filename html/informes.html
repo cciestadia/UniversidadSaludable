@@ -10,6 +10,8 @@
   <meta name="description" content="" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../img/utn-sincolor.png" />
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -94,7 +96,7 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="pages-account-settings-notifications.html" class="menu-link">
+                <a href="reportes.html" class="menu-link">
                   <div class="text-truncate" data-i18n="Notifications">Reportes</div>
                 </a>
               </li>
@@ -255,34 +257,26 @@
 
               <!-- Hoverable Table rows -->
               <div class="card">
-                <h5 class="card-header">Lista de artículos publicados</h5>
+                <h5 class="card-header">Lista de informes</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th>Título del artículo</th>
+                        <th>Título del informe</th>
                         <th>Descripción</th>
-                        <th>Fecha publicación</th>
-                        <th>Quien publica</th>
+                        <th>Fecha de publicación</th>
+                        <th>Nombre de quien publicó</th>
                         <th>Acciones</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
                         <td>
-                        <span>Título del artículo</span>
+                        <span>Título informe</span>
                         </td>
-                        <td>Descripción del artículo</td>
-                        <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                           <span>08 diciembre 2024</span>
-                          </ul>
-                        </td>
-                        <td>
-                            <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                             <span>Sergio A. Rodríguez</span>
-                            </ul>
-                          </td>
+                        <td>Descripción del informe</td>
+                        <td>Fecha publicación</td>
+                        <td>Nombre de quien publicó</td>
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -290,127 +284,136 @@
                             </button>
                             
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-volume-full me-1"></i> Publicar</a
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
                                 >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
                               >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-refresh me-1"></i>Actualizar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                          ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                        >
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                            <span>Título del artículo</span>
+                            <span>Título informe</span>
+                            </td>
+                            <td>Descripción del informe</td>
+                            <td>Fecha publicación</td>
+                            <td>Nombre de quien publicó</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="icon-base bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
+                                >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-refresh me-1"></i>Actualizar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                          ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                        >
+                            </div>
+                          </div>
                         </td>
-                        <td>Descripción del artículo</td>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
                         <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                           <span>12 abril 2024</span>
-                          </ul>
-                        </td>
-                        <td>
-                            <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                             <span>Gerardo Pluma</span>
-                            </ul>
-                          </td>
-                        <td>
+                            <span>Título informe</span>
+                            </td>
+                            <td>Descripción del informe</td>
+                            <td>Fecha publicación</td>
+                            <td>Nombre de quien publicó</td>
+                            <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                               <i class="icon-base bx bx-dots-vertical-rounded"></i>
                             </button>
                             
                             <div class="dropdown-menu">
-                               
                                 <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-volume-full me-1"></i> Publicar</a
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
                                 >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
                               >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-refresh me-1"></i> Actualizar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                          ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                        >
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                            <span>Título del artículo</span>
-                        </td>
-                        <td>Descripción del artículo</td>
-                        <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                           <span>10 febrero 2025</span>
-                          </ul>
-                        </td>
-                        <td>
-                            <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                             <span>Luis Manuel Fernández</span>
-                            </ul>
-                          </td>
-                        <td>
+                            <span>Título informe</span>
+                            </td>
+                            <td>Descripción del informe</td>
+                            <td>Fecha publicación</td>
+                            <td>Nombre de quien publicó</td>
+                            <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                               <i class="icon-base bx bx-dots-vertical-rounded"></i>
                             </button>
-                            
                             <div class="dropdown-menu">
-                               
                                 <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-volume-full me-1"></i> Publicar</a
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
                                 >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
                               >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-refresh me-1"></i>Actualizar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                          ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                        >
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <span>Título del artículo</span>
-                        </td>
-                        <td>Descripción del artículo</td>
-                        <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                           <span>08 marzo 2025</span>
-                          </ul>
-                        </td>
-                        <td>
-                            <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                             <span>Elvía Espítia</span>
-                            </ul>
-                          </td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="icon-base bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            
-                            <div class="dropdown-menu">
-                               
-                                <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-volume-full me-1"></i> Publicar</a
-                                >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+                      </tr>                 
                     </tbody>
                   </table>
                 </div>
