@@ -2231,6 +2231,66 @@ iframe {
 }
 
 
+
+/*******************************/
+/********* img perfil investigador CSS **********/
+/*******************************/
+
+.investigador img {
+    width: auto; 
+    height: 100px; 
+    border-radius: 80%; 
+    align-items: center; 
+    
+}
+
+
+/******** tablas perfil investigador ********/
+
+
+/* Estilo general para el texto dentro del párrafo */
+p.mb-6 {
+    margin-bottom: 1.5rem; /* Ajusta el margen inferior */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para las tablas dentro del contenedor */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Margen superior e inferior para la tabla */
+}
+
+table.table-bordered th, table.table-bordered td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.table-bordered th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Enlace dentro de la tabla */
+table.table-bordered td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table.table-bordered td a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
