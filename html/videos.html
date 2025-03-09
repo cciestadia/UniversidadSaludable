@@ -258,6 +258,11 @@
                   <!-- Hoverable Table rows -->
                   <div class="card">
                     <h5 class="card-header">Lista de videos publicados</h5>
+                    <!-- Botón para abrir el modal -->
+                    <div class="text-center">
+                        <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#videoModal">Subir video</button>
+                </div>
+                <br>
                     <div class="table-responsive text-nowrap">
                         <table class="table table-hover">
                           <thead>
@@ -276,14 +281,11 @@
                               </td>
                               <td>Mariana Escalante</td>
                               <td>Nancy Cabrera</td>
-                              <td><button
-                                type="button"
-                                class="btn btn-primary"
-                                data-bs-toggle="modal"
-                                data-bs-target="#youTubeModal"
-                                data-theVideo="https://www.youtube.com/embed/EngW7tLk6R8">
-                                ver video
-                              </button></td>
+                              <td>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#youTubeModal" data-theVideo="https://www.youtube.com/embed/EngW7tLk6R8">
+                                    Ver video
+                                  </a>                         
+                                </td>
                               <td>
                                 <div class="dropdown">
                                   <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -301,11 +303,34 @@
                                   </div>
                                 </div>
                               </td>
-                              </tr>
-
-      
-
-                              <!-- Modal -->
+                            </tr>                 
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!--/ Hoverable Table rows -->
+    
+                  <hr class="my-12" />
+    
+                </div>
+                <!-- / Content -->
+    
+                <!-- Footer -->
+    
+                <div class="copyright d-flex justify-content-center align-items-center min-vh-50 text-center">
+                    <div>
+                        <a>Copyright &copy; <a href="#">Universidad Saludable</a>, Todos los derechos reservados.</a>
+                        <p> </p>
+                        <a>Diseñado por <a href="">11:11</a></a>
+                        
+                    </div>
+                </div>
+            
+                <br>
+                <br>   
+    
+                <!-- / Footer -->
+                            <!-- Modal -->
                               <div class="modal fade" id="youTubeModal" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                   <div class="modal-content">
@@ -321,15 +346,7 @@
                 </div>
                 
     </div>
-
-    <!-- Botón para abrir el modal -->
-    <div class="text-center">
- <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
- Subir Video
- </button>
- </div>
- <br>
-                                                            
+                                                           
                 
         <!-- Modal para subir video -->
          
@@ -377,6 +394,10 @@
             </div>
         </div>
     </div>
+
+    </div>
+     
+                    
 
     <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
