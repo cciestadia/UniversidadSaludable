@@ -250,217 +250,224 @@
 
         <!-- / Navbar -->
 
-            <!-- Content wrapper -->
-            <div class="content-wrapper">
-                <!-- Content -->
-                <div class="container-xxl flex-grow-1 container-p-y">
-    
-                  <!-- Hoverable Table rows -->
-                  <div class="card">
-                    <h5 class="card-header">Lista de videos publicados</h5>
-                    <!-- Botón para abrir el modal -->
-                    <div class="text-center">
-                        <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#videoModal">Subir video</button>
-                </div>
-                <br>
-                    <div class="table-responsive text-nowrap">
-                        <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th>Título del video</th>
-                              <th>Descripción</th>
-                              <th>Quien publica</th>
-                              <th>Ver video</th>
-                              <th>Acciones</th>
-                            </tr>
-                          </thead>
-                          <tbody class="table-border-bottom-0">
-                            <tr>
-                              <td>
-                              <span>Los Factores Psicosociales</span>
-                              </td>
-                              <td>Mariana Escalante</td>
-                              <td>Nancy Cabrera</td>
-                              <td>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#youTubeModal" data-theVideo="https://www.youtube.com/embed/EngW7tLk6R8">
-                                    Ver video
-                                  </a>                         
-                                </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                    <i class="icon-base bx bx-dots-vertical-rounded"></i>
-                                  </button>
-                                  
-                                  <div class="dropdown-menu">
-                                     
-                                    <a class="dropdown-item" href="javascript:void(0);"
-                                      ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
-                                    >
-                                    <a class="dropdown-item" href="javascript:void(0);"
-                                      ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                                    >
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>                 
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <!--/ Hoverable Table rows -->
-    
-                  <hr class="my-12" />
-    
-                </div>
-                <!-- / Content -->
-    
-                <hr class="my-12" />
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
 
-              </div>
-              <!-- / Content -->
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="youTubeModal" tabindex="-1" aria-hidden="true">
-                                      <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                          <iframe height="350" src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-      
+              <!-- Hoverable Table rows -->
+              <div class="card">
+                <h5 class="card-header">Lista de reportes de inventarios realizados</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Nombre del docente</th>
+                        <th>Divisíon académica</th>
+                        <th>Inventario realizado</th>
+                        <th>Nombre de quien aplicá</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                        <span>Armando Lule</span>
+                        </td>
+                        <td>Informática y Computación</td>
+                        <td>Cuestionario de Estrés Laboral del la OIT-OMS</td>
+                        <td>
+                        <span>Gerardo Pluma</span>
+                        </td>
+                        <td>20/02/2025</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="icon-base bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            
+                            <div class="dropdown-menu">
+                               
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
+                                >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                              >
                             </div>
                           </div>
-                      </div>
-                      
-          </div>
-            
-
-
-                      <!-- Modal para subir video -->
-         
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="videoModalLabel">Subir Video</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                  </div>
-                  <div class="modal-body">
-
-                      <!-- Formulario de carga de video -->
-                      <form>
-                          <div class="mb-3">
-                              <label for="videoUpload" class="form-label">Selecciona un archivo de video</label>
-                              <input class="form-control" type="file" id="videoUpload" accept="video/*">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <span>Edgardo Faustinos</span>
+                            </td>
+                            <td>Informática y Computación</td>
+                            <td>Cuestionario de Síntomas Subjetivos de Fatiga Yoshitake</td>
+                            <td>
+                            <span>Elvía Espítia</span>
+                            </td>
+                            <td>20/02/2025</td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="icon-base bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                               
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
+                                >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                              >
+                            </div>
                           </div>
-
-                          <div class="mb-3">
-                              <label for="videoTitle" class="form-label">Título del Video</label>
-                              <input type="text" class="form-control" id="videoTitle" placeholder="Ingresa el título del video">
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                            <span>Claudia Valadez</span>
+                            </td>
+                            <td>Informática y Computación</td>
+                            <td>Cuestionario de Estrés Laboral del la OIT-OMS</td>
+                            <td>
+                            <span>Carlos Perea</span>
+                            </td>
+                            <td>20/02/2025</td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="icon-base bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                
+                            <div class="dropdown-menu">
+                               
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
+                                >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                              >
+                            </div>
                           </div>
-
-                          <div class="mb-3">
-                              <label for="videoDescription" class="form-label">Descripción del Video</label>
-                              <textarea class="form-control" id="videoDescription" rows="3" placeholder="Ingresa una descripción del video"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <span>Miguel A. Aguilar</span>
+                            </td>
+                            <td>Informática y Computación</td>
+                            <td>Cuestionario de Estrés Laboral del la OIT-OMS</td>
+                            <td>
+                            <span>Luis Manuel Fernández</span>
+                            </td>
+                            <td>20/02/2025</td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="icon-base bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                               
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
+                                >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
+                              >
+                            </div>
                           </div>
-
-                          <!-- Video explorado -->
-                          <div class="mt-3">
-                              <h4>Vista previa del video:</h4>
-                              <video id="videoPreview" width="100%" controls>
-                                  <source src="" id="videoSource">
-                                  Tu navegador no soporta el elemento de video.
-                              </video>
-                          </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="submit" class="btn btn-primary">Subir Video</button>
-                  </div>
+                        </td>
+                      </tr>                 
+                    </tbody>
+                  </table>
+                </div>
               </div>
-          </div>
-      </div>
-  </div>
+              <!--/ Hoverable Table rows -->
 
-  </div>
-   
-  <hr class="my-12" />
+              <hr class="my-12" />
 
-</div>
-<!-- / Content -->
+            </div>
+            <!-- / Content -->
 
-<!-- Footer -->
+            <!-- Footer -->
 
-<div class="copyright d-flex justify-content-center align-items-center min-vh-50 text-center">
-    <div>
-        <a>Copyright &copy; <a href="#">Universidad Saludable</a>, Todos los derechos reservados.</a>
-        <p> </p>
-        <a>Diseñado por <a href="">11:11</a></a>
+            <div class="copyright d-flex justify-content-center align-items-center min-vh-50 text-center">
+                <div>
+                    <a>Copyright &copy; <a href="#">Universidad Saludable</a>, Todos los derechos reservados.</a>
+                    <p> </p>
+                    <a>Diseñado por <a href="">11:11</a></a>
+                    
+                </div>
+            </div>
         
+            <br>
+            <br>   
+
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-</div>
+    <!-- / Layout wrapper -->
 
-<br>
-<br>   
+      <!-- Core JS -->
 
-<!-- / Footer -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
 
-<div class="content-backdrop fade"></div>
-</div>
-<!-- Content wrapper -->
-</div>
-<!-- / Layout page -->
-</div>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
 
-<!-- Overlay -->
-<div class="layout-overlay layout-menu-toggle"></div>
-</div>
-<!-- / Layout wrapper -->
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-<!-- Core JS -->
+    <script src="../assets/vendor/js/menu.js"></script>
 
-<script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <!-- endbuild -->
 
-<script src="../assets/vendor/libs/popper/popper.js"></script>
-<script src="../assets/vendor/js/bootstrap.js"></script>
+    <!-- Vendors JS -->
 
-<script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <!-- Main JS -->
 
-<script src="../assets/vendor/js/menu.js"></script>
+    <script src="../assets/js/main.js"></script>
 
-<!-- endbuild -->
+    <!-- Page JS -->
 
-<!-- Vendors JS -->
-
-<!-- Main JS -->
-
-<script src="../assets/js/main.js"></script>
-
-<!-- Page JS -->
-
-<!-- Place this tag before closing body tag for github widget button. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
-</html>
-
-
-  <!-- Scripts de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script para mostrar vista previa del video -->
-  <script>
-      document.getElementById('videoUpload').addEventListener('change', function(event) {
-          var videoFile = event.target.files[0];
-          if (videoFile) {
-              var videoURL = URL.createObjectURL(videoFile);
-              document.getElementById('videoSource').src = videoURL;
-              document.getElementById('videoPreview').load();
-          }
-      });
-  </script>
-</body>
+    <!-- Place this tag before closing body tag for github widget button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
 </html>

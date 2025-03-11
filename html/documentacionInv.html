@@ -10,8 +10,6 @@
   <meta name="description" content="" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../img/utn-sincolor.png" />
-  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,8 +94,8 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="reportes.html" class="menu-link">
-                  <div class="text-truncate" data-i18n="Notifications">Reportes</div>
+                <a href="listasDocentes.html" class="menu-link">
+                  <div class="text-truncate" data-i18n="Notifications">Listas</div>
                 </a>
               </li>
             </ul>
@@ -141,7 +139,7 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                <a href="entrevistas.html" class="menu-link" target="_blank">
                   <div class="text-truncate" data-i18n="Basic">Entrevistas</div>
                 </a>
               </li>
@@ -149,7 +147,7 @@
           </li>
 
           <li class="menu-item">
-            <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
+            <a href="instrumentos.html"
               target="_blank" class="menu-link">
               <i class="menu-icon tf-icons bx bx-file"></i>
               <div class="text-truncate" data-i18n="Documentation">Instrumentos</div>
@@ -161,7 +159,7 @@
           <!-- Otros -->
           <li class="menu-header small text-uppercase"><span class="menu-header-text">Otros</span></li>
           <li class="menu-item">
-            <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
+            <a href="documentacionInv.html"
               target="_blank" class="menu-link">
               <i class="menu-icon tf-icons bx bx-file"></i>
               <div class="text-truncate" data-i18n="Documentation">Documentación</div>
@@ -214,7 +212,7 @@
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <h6 class="mb-0">Nombre del investigador</h6>
+                          <h6 class="mb-0">John Doe</h6>
                           <small class="text-body-secondary">Investigador</small>
                         </div>
                       </div>
@@ -257,27 +255,33 @@
 
               <!-- Hoverable Table rows -->
               <div class="card">
-                <h5 class="card-header">Lista de reportes de los cuestionarios aplicados</h5>
+                <h5 class="card-header">Lista de documentos</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th>Nombre del cuestionario</th>
-                        <th>Quien lo realizó</th>
-                        <th>Quien lo aplicó</th>
+                        <th>Título del documento</th>
+                        <th>Descripción</th>
+                        <th>Fecha elaboración</th>
+                        <th>Ver documento</th>
                         <th>Acciones</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
                         <td>
-                        <span>Cuestionario de Estrés Laboral del la OIT-OMS</span>
+                        <span>Consentimiento Informado</span>
                         </td>
-                        <td>Catalina Barbeito</td>
+                        <td>Documento dirigido a los docentes asegurando que <br>puedan tomar decisiones informadas 
+                          sobre su bienestar <br> y su participación en diversos procesos.
+                        </td>
                         <td>
                           <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                           <span>Luis Manuel Fernández</span>
+                           <span>10/13/2025</span>
                           </ul>
+                        </td>
+                        <td>
+                          <a href="../pdf/Consentimiento.pdf" target="_blank">Ver documento</a>
                         </td>
                         <td>
                           <div class="dropdown">
@@ -287,15 +291,18 @@
                             
                             <div class="dropdown-menu">
                                
-                                <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
-                                >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
                               >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-download me-1"></i> Descargar</a
                             >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                          >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                              >
                               <a class="dropdown-item" href="javascript:void(0);"
                                 ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
                               >
@@ -305,30 +312,39 @@
                       </tr>
                       <tr>
                         <td>
-                          <span>Cuestionario de Síntomas Subjetivos de Fatiga Yoshitake</span>
+                        <span>Política de privacidad</span>
                         </td>
-                        <td>Mario Ovando</td>
+                        <td>Este documento tiene como objetivo informar a los usuarios <br> o clientes sobre cómo se recopilan, 
+                          almacenan, usan, protegen <br> y comparten sus datos personales.
+                        </td>
                         <td>
                           <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                              <span>Carlos Perea</span>
+                           <span>10/13/2025</span>
                           </ul>
+                        </td>
+                        <td>
+                          <a href="../pdf/Consentimiento.pdf" target="_blank">Ver documento</a>
                         </td>
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                               <i class="icon-base bx bx-dots-vertical-rounded"></i>
                             </button>
+                            
                             <div class="dropdown-menu">
                                
-                                <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
-                                >
                               <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
+                              ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
                               >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="icon-base bx bx-download me-1"></i> Descargar</a
                             >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="icon-base bx bx-share me-1"></i> Compartir</a
+                          >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="icon-base bx bx-edit-alt me-1"></i> Editar</a
+                              >
                               <a class="dropdown-item" href="javascript:void(0);"
                                 ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
                               >
@@ -338,73 +354,6 @@
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td>
-                        <span>Cuestionario de Síntomas Subjetivos de Fatiga Yoshitake </span>
-                        </td>
-                        <td>Edgardo Faustinos</td>
-                        <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                              <span>Elvía Espítia</span>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="icon-base bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            
-                            <div class="dropdown-menu">
-                               
-                                <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
-                                >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
-                            >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span>Cuestionario de Estrés Laboral del la OIT-OMS</span>
-                        </td>
-                        <td>Claudia Valadez</td>
-                        <td>
-                          <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                              <span>Sergio A. Rodríguez</span>
-                          </ul>
-                        </td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="icon-base bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                               
-                                <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-printer me-1"></i> Imprimir</a
-                                >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-download me-1"></i> Descargar</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="icon-base bx bx-share me-1"></i> Compartir</a
-                            >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="icon-base bx bx-trash me-1"></i> Eliminar</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>                 
                     </tbody>
                   </table>
                 </div>
