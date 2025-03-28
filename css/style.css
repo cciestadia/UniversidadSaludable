@@ -2284,10 +2284,29 @@ table.table-bordered td a:hover {
 
 
 
+/********Inicio stilos chatBot****/
 
-
-
-
+/* Estilo del botón flotante */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #336699;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(113, 156, 190, 0.3);
+  z-index: 1050;
+}
+/****** Fin Boton chatbot *******/
 
 
 
