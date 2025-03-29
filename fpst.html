@@ -96,7 +96,7 @@
             <div class="blog-meta">
                 <p><i class="far fa-user"></i> Desarrollado por Organización Internacional del Trabajo (OIT) y la Organización Mundial de la Salud (OMS).</p>
                 <p><i class="far fa-list-alt"></i> Categoría: Evaluación del estrés laboral</p>
-                <p><i class="far fa-calendar-alt"></i>1997</p>
+                <p><i class="far fa-calendar-alt"></i>1980</p>
             </div>
             <div class="blog-text">
                 <p>Es una herramienta diseñada para evaluar el estrés laboral en los trabajadores. Este cuestionario 
@@ -135,9 +135,15 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="matricula" class="form-label">Matrícula</label>
-                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu matrícula">
+                        <label for="matricula" class="form-label">No. empleado</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe tu No. de empleado">
                     </div>
+
+                    <div class="mb-3">
+                        <label for="matricula" class="form-label">División académica</label>
+                        <input type="number" class="form-control" id="nombre" placeholder="Escribe la división a la que perteneces">
+                    </div>
+
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
@@ -145,8 +151,8 @@
                     </div>
                     <p> 
                         A continuación encontrará una seríe de situaciones relacionadas con el trabajo y su vida personal.
-                        Por favor, indique el grado de acuerdo respecto a cada una de las casillas que mejor describa su opinion 
-                        de acuerdo a las escalas que se le mostrarán.
+                        Por favor, Para cada pregunta debe indicar con qué frecuencia la condición descrita es una fuente 
+                        actual de estrés, anotando el número que mejor la describa. 
                     </p>   
                     </form>
             </div>
@@ -165,7 +171,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="distanciamientoModalLabel">Distanciamiento Psicológico</h5>
+                <h5 class="modal-title" id="distanciamientoModalLabel">Estrés Laboral</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <!-- Formulario del Test primera parte -->
@@ -187,15 +193,15 @@
                         <br>
                         5 = Si la condición FRECUENTEMENTE es fuente de estrés.
                         <br>
-                        5 = Si la condición GENERALMENTE es fuente de estrés.
+                        6 = Si la condición GENERALMENTE es fuente de estrés.
                         <br>
-                        6.	Si la condición SIEMPRE es fuente de estrés.
+                        7.	Si la condición SIEMPRE es fuente de estrés.
                     </p>
 
                     <div class="mb-3">
                         <p>Comenzamos</p>
                             <!-- Opción de selección (Radio Buttons) -->
-                            <p>¿Después del trabajo soy capaz de desconectar?</p>
+                            <p>1. La gente no comprende la misión y metas de la organización.</p>
                             <label for="1">1</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="2">2</label>
@@ -206,11 +212,16 @@
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="5">5</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">6</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">7</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+
                     </div>
 
                     <div class="mb-3">
                             <!-- Opción de selección (Radio Buttons) -->
-                            <p>¿Cuándo salgo del trabajo, me olvido completamente del trabajo?</p>
+                            <p>2. La forma de rendir informes entre superior y subordinado me hace sentir presionado.</p>
                             <label for="1">1</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="2">2</label>
@@ -220,12 +231,15 @@
                             <label for="4">4</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">6</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">7</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
 
                     <div class="mb-3">
-                            <!-- Opción de selección (Radio Buttons) -->
-                            <p>¿Soy capaz de distanciarme de mi trabajo?</p>
+                            <p>3. No estoy en condiciones de controlar las actividades de mi área de trabajo.</p>
                             <label for="1">1</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="2">2</label>
@@ -235,23 +249,30 @@
                             <label for="4">4</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                             <label for="5">5</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="4">6</label>
+                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            <label for="5">7</label>
                             <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
 
                     <div class="mb-3">
-                            <!-- Opción de selección (Radio Buttons) -->
-                            <p>A veces me tomo un respiro de las demandas de mi trabajo</p>
-                            <label for="1">1</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="2">2</label>
-                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
-                            <label for="3">3</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="4">4</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="5">5</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                    </div>
+                        <p>4. El equipo disponible para llevar a cabo el trabajo a tiempo es limitado.</p>
+                        <label for="1">1</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="2">2</label>
+                        <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                        <label for="3">3</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="4">4</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="5">5</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="4">6</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="5">7</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                </div>
                 </form>
             </div>
             <div class="modal-footer">
@@ -271,7 +292,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="relajacionModalLabel">Relajación</h5>
+                <h5 class="modal-title" id="relajacionModalLabel">Estrés Laboral</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <!-- Formulario del Test primera parte -->
@@ -281,47 +302,56 @@
                         Conteste todas las preguntas.
                         <br>
                         <br>
-                        1 = Totalmente en desacuerdo  
+                        1 = Si la condición NUNCA es fuente de estrés.
                         <br>     
-                        2 = En desacuerdo         
+                        2 = Si la condición RARAS VECES es fuente de estrés.       
                         <br>
-                        3 = Ni de acuerdo ni desacuerdo
+                        3 = Si la condición OCASIONALMENTE es fuente de estrés.
                         <br>         
-                        4 = De acuerdo     
+                        4 = Si la condición ALGUNAS VECES es fuente de estrés.    
                         <br>
-                        5 = Totalmente de acuerdo
+                        5 = Si la condición FRECUENTEMENTE es fuente de estrés.
+                        <br>
+                        6 = Si la condición GENERALMENTE es fuente de estrés.
+                        <br>
+                        7.	Si la condición SIEMPRE es fuente de estrés.
                         </p>
                     <div class="mb-3">
-                            <!-- Opción de selección (Radio Buttons) -->
-                            <p>¿Soy capaz de dejar aun lado mi trabajo y relajarme?</p>
-                            <label for="1">1</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="2">2</label>
-                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
-                            <label for="3">3</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="4">4</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="5">5</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <p>5. Mi supervisor no da la cara por mí ante los jefes.</p>
+                        <label for="1">1</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="2">2</label>
+                        <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                        <label for="3">3</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="4">4</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="5">5</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="4">6</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                        <label for="5">7</label>
+                        <input type="radio" id="si" name="boletin" value="totalmente"><br>
                     </div>
 
                     <div class="mb-3">
                             <!-- Opción de selección (Radio Buttons) -->
-                            <p>
-                                ¿Realizo actividades que me ayudan a sentirme relajado?
-                            </p>
-                            <label for="1">1</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="2">2</label>
-                            <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
-                            <label for="3">3</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="4">4</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                            <label for="5">5</label>
-                            <input type="radio" id="si" name="boletin" value="totalmente"><br>
-                    </div>
+                                <p>6. Mi supervisor no me respeta.</p>
+                                <label for="1">1</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                <label for="2">2</label>
+                                <input type="radio" id="no" name="boletin" value="en desacuerdo"><br>
+                                <label for="3">3</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                <label for="4">4</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                <label for="5">5</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                <label for="4">6</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                                <label for="5">7</label>
+                                <input type="radio" id="si" name="boletin" value="totalmente"><br>
+                            </div>
 
                     <div class="mb-3">
                             <!-- Opción de selección (Radio Buttons) -->
