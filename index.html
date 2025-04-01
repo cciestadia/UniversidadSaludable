@@ -96,46 +96,56 @@
       <!-- CHATBOT BOTÓN FLOTANTE" -->
 
       <style>
-/* Estilo del modal */
-.modal-dialog-custom {
-    max-width: 1000px; /* Ancho máximo */
-    position: fixed;
-    bottom: 0; /* Fijado en la parte inferior */
-    left: 0; /* Fijado en la parte izquierda */
-    margin: 0; /* Eliminar márgenes para fijarlo */
-    transform: none; /* Evita el centrado automático de Bootstrap */
-    width: 100%; /* Asegura que el modal ocupe el 100% del ancho */
-    height: 100%; /* Asegura que el modal ocupe el 100% de la altura de la ventana */
-}
-
-.modal-content {
-    height: 600px; /* Alto */
-    width: 600px;
-    font-family: 'Nunito', sans-serif; /* Fuente Nunito */
-    border-radius: 0%; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-.modal-header {
-    background-color: #336699; /* Azul Bootstrap */
-    color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.modal-title {
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif; /* Fuente Nunito */
-    color: white;
-}
-
-.modal-body {
-    font-size: 16px;
-    text-align: center;
-    padding: 0;
-}
-      </style>
-    
+        /* Estilo del modal */
+        .modal-dialog-custom {
+            max-width: 50%; /* Ancho máximo 100% */
+            position: fixed;
+            bottom: 0; /* Fijado en la parte inferior */
+            left: 0; /* Fijado en la parte izquierda */
+            margin: 0; /* Eliminar márgenes para fijarlo */
+            transform: none; /* Evita el centrado automático de Bootstrap */
+            width: 100%; /* Asegura que el modal ocupe el 100% del ancho */
+            height: 100%; /* Asegura que el modal ocupe el 100% de la altura de la ventana */
+        }
+        
+        .modal-content {
+            height: 100%; /* Asegura que el contenido ocupe todo el alto del modal */
+            width: 100%; /* Asegura que el contenido ocupe todo el ancho del modal */
+            font-family: 'Nunito', sans-serif; /* Fuente Nunito */
+            border-radius: 0%; /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            overflow: hidden; /* Asegura que el contenido no se desborde */
+        }
+        
+        .modal-header {
+            background-color: #336699; /* Azul Bootstrap */
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        .modal-title {
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif; /* Fuente Nunito */
+            color: white;
+        }
+        
+        .modal-body {
+            font-size: 16px;
+            text-align: center;
+            padding: 0;
+            height: 100%; /* Asegura que el cuerpo ocupe el 100% de la altura */
+        }
+        
+        /* Estilo para el iframe */
+        iframe {
+            width: 100%; /* Asegura que el iframe ocupe todo el ancho del modal */
+            height: 100%; /* Asegura que el iframe ocupe todo el alto del modal */
+            border: 0; /* Elimina el borde */
+            border-radius: 0; /* Elimina el redondeo de los bordes */
+            overflow: hidden; /* Evita que se desborde */
+        }
+        </style>
       <!-- Botón flotante -->
       <button class="floating-btn" data-bs-toggle="modal" data-bs-target="#chatbotModal">
         💬
@@ -147,7 +157,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="chatbotModalLabel">Universidad Saludable</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             </div>
             <div class="modal-body">
 <iframe 
